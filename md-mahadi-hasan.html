@@ -1,0 +1,6565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Md Mahadi Hasan | Official Website</title>
+
+<meta name="description" content="Official Website of Md Mahadi Hasan">
+
+<meta name="keywords" content="Mahadi Hasan, Portfolio, Travel, Blog, Gallery">
+
+<meta name="author" content="Md Mahadi Hasan">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+:root{
+
+--primary:#2ecc71;
+--secondary:#27ae60;
+--dark:#101820;
+--glass:rgba(255,255,255,.12);
+--white:#fff;
+
+}
+
+body{
+
+background:
+linear-gradient(rgba(10,25,35,.55),
+rgba(10,25,35,.65)),
+url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=2000");
+
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+
+color:white;
+
+overflow-x:hidden;
+
+}
+
+.container{
+
+width:92%;
+max-width:1200px;
+margin:auto;
+
+}
+
+.top-space{
+
+height:20px;
+
+}
+
+/* Glass */
+
+.glass{
+
+background:rgba(255,255,255,.12);
+
+backdrop-filter:blur(20px);
+
+-webkit-backdrop-filter:blur(20px);
+
+border:1px solid rgba(255,255,255,.15);
+
+border-radius:25px;
+
+box-shadow:0 15px 35px rgba(0,0,0,.25);
+
+}
+
+/* Button */
+
+.btn{
+
+display:inline-block;
+
+padding:14px 28px;
+
+margin:8px;
+
+text-decoration:none;
+
+border-radius:50px;
+
+font-weight:600;
+
+background:linear-gradient(135deg,#2ecc71,#16a085);
+
+color:white;
+
+transition:.35s;
+
+}
+
+.btn:hover{
+
+transform:translateY(-4px);
+
+box-shadow:0 10px 25px rgba(0,0,0,.3);
+
+}
+
+/* Titles */
+
+.section-title{
+
+text-align:center;
+
+font-size:38px;
+
+font-weight:700;
+
+margin-bottom:35px;
+
+}
+
+/* Images */
+
+img{
+
+max-width:100%;
+
+display:block;
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.section-title{
+
+font-size:28px;
+
+}
+
+.container{
+
+width:94%;
+
+}
+
+.btn{
+
+display:block;
+
+width:100%;
+
+text-align:center;
+
+margin:10px 0;
+
+}
+
+}</style>
+</head>
+
+<body>
+
+<!-- ================= TOP BAR ================= -->
+
+<div class="topbar glass">
+
+<div class="container top-content">
+
+<span>🌍 Bangladesh</span>
+
+<span>📧 your@email.com</span>
+
+<span>📞 +880 1XXXXXXXXX</span>
+
+</div>
+
+</div>
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+<div class="container nav-area">
+
+<div class="logo">
+
+<h2>Md Mahadi Hasan</h2>
+
+</div>
+
+<input type="checkbox" id="menu">
+
+<label for="menu" class="menu-btn">
+
+☰
+
+</label>
+
+<nav>
+
+<a href="#">Home</a>
+
+<a href="#about">About</a>
+
+<a href="#blog">Blog</a>
+
+<a href="#travel">Traveling</a>
+
+<a href="#gallery">Gallery</a>
+
+<a href="#achievement">Achievements</a>
+
+<a href="#map">Map</a>
+
+<a href="#contact">Contact</a>
+
+</nav>
+
+</div>
+
+</header>
+
+<style>
+
+.topbar{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+padding:12px 0;
+
+z-index:999;
+
+border-radius:0;
+
+}
+
+.top-content{
+
+display:flex;
+
+justify-content:space-between;
+
+font-size:14px;
+
+}
+
+.header{
+
+margin-top:65px;
+
+padding:20px 0;
+
+}
+
+.nav-area{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+}
+
+.logo h2{
+
+font-size:32px;
+
+font-weight:700;
+
+}
+
+nav{
+
+display:flex;
+
+gap:18px;
+
+}
+
+nav a{
+
+text-decoration:none;
+
+color:white;
+
+font-weight:500;
+
+transition:.3s;
+
+}
+
+nav a:hover{
+
+color:#2ecc71;
+
+}
+
+#menu{
+
+display:none;
+
+}
+
+.menu-btn{
+
+display:none;
+
+font-size:30px;
+
+cursor:pointer;
+
+}
+
+@media(max-width:768px){
+
+.top-content{
+
+display:none;
+
+}
+
+.menu-btn{
+
+display:block;
+
+}
+
+nav{
+
+position:fixed;
+
+top:90px;
+
+left:-100%;
+
+width:85%;
+
+height:100vh;
+
+background:#111827;
+
+display:flex;
+
+flex-direction:column;
+
+padding:40px;
+
+transition:.4s;
+
+}
+
+#menu:checked~nav{
+
+left:0;
+
+}
+
+nav a{
+
+padding:15px 0;
+
+font-size:18px;
+
+}
+
+.logo h2{
+
+font-size:26px;
+
+}
+
+}
+
+</style>
+
+<!-- ================= HERO SECTION ================= -->
+
+<section class="hero">
+
+<div class="container hero-content">
+
+<div class="hero-text">
+
+<h1>
+
+Hello, I'm <br>
+
+<span>Md Mahadi Hasan</span>
+
+</h1>
+
+<p>
+
+Traveler • Blogger • Student
+
+Sharing my journey, travel stories, photography and achievements.
+
+</p>
+
+<a href="resume.html" class="btn">
+
+Resume
+
+</a>
+
+<a href="gallery.html" class="btn">
+
+Gallery
+
+</a>
+
+</div>
+
+<div class="hero-image">
+
+<img src="profile.jpg">
+
+</div>
+
+</div>
+
+</section>
+
+<style>
+
+.hero{
+
+padding:80px 0;
+
+}
+
+.hero-content{
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+gap:40px;
+
+}
+
+.hero-text{
+
+flex:1;
+
+}
+
+.hero-text h1{
+
+font-size:55px;
+
+line-height:1.2;
+
+margin-bottom:20px;
+
+}
+
+.hero-text span{
+
+color:#2ecc71;
+
+}
+
+.hero-text p{
+
+font-size:18px;
+
+line-height:1.8;
+
+margin-bottom:25px;
+
+}
+
+.hero-image{
+
+flex:1;
+
+display:flex;
+
+justify-content:center;
+
+}
+
+.hero-image img{
+
+width:350px;
+
+height:350px;
+
+border-radius:50%;
+
+object-fit:cover;
+
+border:8px solid rgba(255,255,255,.25);
+
+box-shadow:0 20px 40px rgba(0,0,0,.4);
+
+}
+
+@media(max-width:768px){
+
+.hero{
+
+padding:40px 0;
+
+}
+
+.hero-content{
+
+flex-direction:column-reverse;
+
+text-align:center;
+
+}
+
+.hero-text h1{
+
+font-size:38px;
+
+}
+
+.hero-image img{
+
+width:230px;
+
+height:230px;
+
+}
+
+}
+
+</style>
+
+<!-- ===== PART 3 STARTS HERE ===== --><!-- ================= ABOUT SECTION ================= -->
+
+<section id="about" style="padding:90px 0;">
+
+<div class="container">
+
+<h2 class="section-title">
+About Me
+</h2>
+
+<div class="glass" style="padding:35px;">
+
+<div class="about-grid">
+
+<div class="about-image">
+
+<img src="profile.jpg" alt="Profile">
+
+</div>
+
+<div class="about-text">
+
+<h2>
+Md Mahadi Hasan
+</h2>
+
+<h4 style="margin:15px 0;color:#2ecc71;">
+Traveler • Blogger • Student
+</h4>
+
+<p>
+
+Hello! I'm Md Mahadi Hasan.
+
+I love traveling, exploring new places,
+photography and learning new things.
+
+This website is my digital portfolio where
+I share my travel memories, blogs,
+achievements and personal projects.
+
+</p>
+
+<div class="about-buttons">
+
+<a href="resume.html" class="btn">
+Resume
+</a>
+
+<a href="contact.html" class="btn">
+Contact
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<style>
+
+.about-grid{
+
+display:grid;
+
+grid-template-columns:330px 1fr;
+
+gap:45px;
+
+align-items:center;
+
+}
+
+.about-image img{
+
+width:100%;
+
+border-radius:25px;
+
+box-shadow:0 20px 40px rgba(0,0,0,.35);
+
+}
+
+.about-text h2{
+
+font-size:42px;
+
+margin-bottom:5px;
+
+}
+
+.about-text p{
+
+line-height:2;
+
+font-size:17px;
+
+opacity:.95;
+
+margin-top:15px;
+
+}
+
+.about-buttons{
+
+margin-top:30px;
+
+}
+
+@media(max-width:768px){
+
+.about-grid{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+.about-text h2{
+
+font-size:30px;
+
+}
+
+.about-image img{
+
+max-width:260px;
+
+margin:auto;
+
+}
+
+}
+
+</style>
+
+<!-- ===== PART 3B STARTS HERE ===== --><!-- ================= MY STATS ================= -->
+
+<section id="stats" style="padding:80px 0;">
+
+<div class="container">
+
+<h2 class="section-title">
+My Statistics
+</h2>
+
+<div class="stats-grid">
+
+<div class="glass stat-card">
+
+<h1>50+</h1>
+
+<p>Travel Places</p>
+
+</div>
+
+<div class="glass stat-card">
+
+<h1>150+</h1>
+
+<p>Photography</p>
+
+</div>
+
+<div class="glass stat-card">
+
+<h1>30+</h1>
+
+<p>Blog Posts</p>
+
+</div>
+
+<div class="glass stat-card">
+
+<h1>10+</h1>
+
+<p>Achievements</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= QUICK INFO ================= -->
+
+<section style="padding-bottom:80px;">
+
+<div class="container">
+
+<div class="glass quick-box">
+
+<h2>Quick Information</h2>
+
+<div class="info-list">
+
+<div>
+<strong>Name</strong>
+<span>Md Mahadi Hasan</span>
+</div>
+
+<div>
+<strong>Profession</strong>
+<span>Student & Blogger</span>
+</div>
+
+<div>
+<strong>Country</strong>
+<span>Bangladesh</span>
+</div>
+
+<div>
+<strong>University</strong>
+<span>Uttara University</span>
+</div>
+
+<div>
+<strong>Interest</strong>
+<span>Travel • Photography • Technology</span>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<style>
+
+.stats-grid{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:25px;
+
+}
+
+.stat-card{
+
+padding:35px 20px;
+
+text-align:center;
+
+transition:.35s;
+
+}
+
+.stat-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.stat-card h1{
+
+font-size:42px;
+
+color:#2ecc71;
+
+margin-bottom:10px;
+
+}
+
+.stat-card p{
+
+font-size:16px;
+
+}
+
+.quick-box{
+
+padding:35px;
+
+}
+
+.quick-box h2{
+
+margin-bottom:25px;
+
+}
+
+.info-list{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:20px;
+
+}
+
+.info-list div{
+
+padding:18px;
+
+border-radius:15px;
+
+background:rgba(255,255,255,.08);
+
+}
+
+.info-list strong{
+
+display:block;
+
+margin-bottom:8px;
+
+color:#2ecc71;
+
+}
+
+@media(max-width:768px){
+
+.stats-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+gap:15px;
+
+}
+
+.stat-card h1{
+
+font-size:32px;
+
+}
+
+.info-list{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+</style>
+
+<!-- ===== PART 3C STARTS HERE ===== --><!-- ================= SKILLS ================= -->
+
+<section id="skills" style="padding:80px 0;">
+
+<div class="container">
+
+<h2 class="section-title">
+My Skills
+</h2>
+
+<div class="glass" style="padding:35px;">
+
+<p>HTML</p>
+
+<div class="progress">
+<div class="bar html">95%</div>
+</div>
+
+<p>CSS</p>
+
+<div class="progress">
+<div class="bar css">92%</div>
+</div>
+
+<p>JavaScript</p>
+
+<div class="progress">
+<div class="bar js">80%</div>
+</div>
+
+<p>Photography</p>
+
+<div class="progress">
+<div class="bar photo">90%</div>
+</div>
+
+<p>Travel Blogging</p>
+
+<div class="progress">
+<div class="bar blog">88%</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= SERVICES ================= -->
+
+<section style="padding-bottom:90px;">
+
+<div class="container">
+
+<h2 class="section-title">
+My Services
+</h2>
+
+<div class="service-grid">
+
+<div class="glass service-card">
+
+<h2>🌍</h2>
+
+<h3>Travel Blog</h3>
+
+<p>
+Sharing travel experiences, destination guides and adventure stories.
+</p>
+
+</div>
+
+<div class="glass service-card">
+
+<h2>📷</h2>
+
+<h3>Photography</h3>
+
+<p>
+Nature, travel and lifestyle photography with creative editing.
+</p>
+
+</div>
+
+<div class="glass service-card">
+
+<h2>💻</h2>
+
+<h3>Web Design</h3>
+
+<p>
+Modern responsive websites with premium user experience.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<style>
+
+.progress{
+
+width:100%;
+
+height:16px;
+
+background:rgba(255,255,255,.12);
+
+border-radius:30px;
+
+overflow:hidden;
+
+margin:10px 0 25px;
+
+}
+
+.bar{
+
+height:100%;
+
+background:linear-gradient(90deg,#2ecc71,#00d4ff);
+
+display:flex;
+
+justify-content:flex-end;
+
+align-items:center;
+
+padding-right:12px;
+
+font-size:12px;
+
+font-weight:600;
+
+}
+
+.html{width:95%;}
+
+.css{width:92%;}
+
+.js{width:80%;}
+
+.photo{width:90%;}
+
+.blog{width:88%;}
+
+.service-grid{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:25px;
+
+}
+
+.service-card{
+
+padding:35px;
+
+text-align:center;
+
+transition:.35s;
+
+}
+
+.service-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.service-card h2{
+
+font-size:55px;
+
+margin-bottom:15px;
+
+}
+
+.service-card h3{
+
+margin-bottom:15px;
+
+}
+
+.service-card p{
+
+line-height:1.8;
+
+opacity:.9;
+
+}
+
+@media(max-width:768px){
+
+.service-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+</style>
+
+<!-- ===== PART 4 STARTS HERE ===== --><!-- ================= FEATURED POSTS ================= -->
+
+<section id="blog" style="padding:90px 0;">
+
+<div class="container">
+
+<h2 class="section-title">
+Featured Posts
+</h2>
+
+<p class="section-subtitle">
+Explore my latest stories, experiences and adventures.
+</p>
+
+<div class="post-grid">
+
+<!-- POST 1 -->
+
+<article class="glass post-card">
+
+<div class="post-image">
+
+<img
+src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1000"
+alt="Travel Adventure">
+
+<span class="post-tag">
+Travel
+</span>
+
+</div>
+
+<div class="post-content">
+
+<div class="post-date">
+📅 August 08, 2026
+</div>
+
+<h3>
+Exploring Beautiful Places
+</h3>
+
+<p>
+Discover amazing destinations, beautiful landscapes
+and unforgettable moments from my latest journey.
+</p>
+
+<a href="#" class="read-more">
+Read Story →
+</a>
+
+</div>
+
+</article>
+
+
+<!-- POST 2 -->
+
+<article class="glass post-card">
+
+<div class="post-image">
+
+<img
+src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1000"
+alt="Mountain Travel">
+
+<span class="post-tag">
+Adventure
+</span>
+
+</div>
+
+<div class="post-content">
+
+<div class="post-date">
+📅 July 28, 2026
+</div>
+
+<h3>
+Into The Mountains
+</h3>
+
+<p>
+A journey through mountains, nature and peaceful
+places far away from the busy city life.
+</p>
+
+<a href="#" class="read-more">
+Read Story →
+</a>
+
+</div>
+
+</article>
+
+
+<!-- POST 3 -->
+
+<article class="glass post-card">
+
+<div class="post-image">
+
+<img
+src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=1000"
+alt="Nature Photography">
+
+<span class="post-tag">
+Photography
+</span>
+
+</div>
+
+<div class="post-content">
+
+<div class="post-date">
+📅 July 15, 2026
+</div>
+
+<h3>
+Moments Through My Lens
+</h3>
+
+<p>
+Some of my favorite photographs captured during
+different journeys and adventures.
+</p>
+
+<a href="#" class="read-more">
+View Photos →
+</a>
+
+</div>
+
+</article>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= LATEST ARTICLES ================= -->
+
+<section id="latest" style="padding:20px 0 100px;">
+
+<div class="container">
+
+<div class="latest-heading">
+
+<div>
+
+<h2>
+Latest Updates
+</h2>
+
+<p>
+What's new on my website
+</p>
+
+</div>
+
+<a href="#" class="all-posts">
+View All →
+</a>
+
+</div>
+
+
+<div class="latest-list">
+
+
+<!-- UPDATE 1 -->
+
+<div class="glass latest-item">
+
+<div class="latest-icon">
+🌍
+</div>
+
+<div class="latest-info">
+
+<span>
+TRAVEL
+</span>
+
+<h3>
+New Travel Journey Coming Soon
+</h3>
+
+<p>
+A new travel story and destination guide
+will be published soon.
+</p>
+
+</div>
+
+<div class="latest-arrow">
+→
+</div>
+
+</div>
+
+
+<!-- UPDATE 2 -->
+
+<div class="glass latest-item">
+
+<div class="latest-icon">
+📸
+</div>
+
+<div class="latest-info">
+
+<span>
+GALLERY
+</span>
+
+<h3>
+New Photos Added
+</h3>
+
+<p>
+Check out the latest photos from my
+recent adventures.
+</p>
+
+</div>
+
+<div class="latest-arrow">
+→
+</div>
+
+</div>
+
+
+<!-- UPDATE 3 -->
+
+<div class="glass latest-item">
+
+<div class="latest-icon">
+🏆
+</div>
+
+<div class="latest-info">
+
+<span>
+ACHIEVEMENT
+</span>
+
+<h3>
+New Achievement Added
+</h3>
+
+<p>
+A new milestone has been added to my
+achievement collection.
+</p>
+
+</div>
+
+<div class="latest-arrow">
+→
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<style>
+
+/* ================= SECTION SUBTITLE ================= */
+
+.section-subtitle{
+
+text-align:center;
+
+max-width:650px;
+
+margin:-20px auto 45px;
+
+font-size:16px;
+
+line-height:1.8;
+
+opacity:.8;
+
+}
+
+
+/* ================= POST GRID ================= */
+
+.post-grid{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:28px;
+
+}
+
+
+/* ================= POST CARD ================= */
+
+.post-card{
+
+overflow:hidden;
+
+padding:0;
+
+transition:.4s;
+
+}
+
+.post-card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:
+0 25px 50px rgba(0,0,0,.35);
+
+}
+
+
+/* ================= POST IMAGE ================= */
+
+.post-image{
+
+height:240px;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.post-image img{
+
+width:100%;
+
+height:100%;
+
+object-fit:cover;
+
+transition:.5s;
+
+}
+
+.post-card:hover .post-image img{
+
+transform:scale(1.08);
+
+}
+
+
+/* ================= POST TAG ================= */
+
+.post-tag{
+
+position:absolute;
+
+top:18px;
+
+left:18px;
+
+padding:7px 14px;
+
+border-radius:30px;
+
+background:rgba(0,0,0,.55);
+
+backdrop-filter:blur(10px);
+
+font-size:12px;
+
+font-weight:600;
+
+}
+
+
+/* ================= POST CONTENT ================= */
+
+.post-content{
+
+padding:25px;
+
+}
+
+.post-date{
+
+font-size:12px;
+
+opacity:.65;
+
+margin-bottom:10px;
+
+}
+
+.post-content h3{
+
+font-size:22px;
+
+margin-bottom:12px;
+
+}
+
+.post-content p{
+
+font-size:14px;
+
+line-height:1.8;
+
+opacity:.82;
+
+}
+
+
+/* ================= READ MORE ================= */
+
+.read-more{
+
+display:inline-block;
+
+margin-top:18px;
+
+color:#2ecc71;
+
+text-decoration:none;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.read-more:hover{
+
+letter-spacing:1px;
+
+}
+
+
+/* ================= LATEST HEADING ================= */
+
+.latest-heading{
+
+display:flex;
+
+align-items:end;
+
+justify-content:space-between;
+
+margin-bottom:30px;
+
+}
+
+.latest-heading h2{
+
+font-size:34px;
+
+}
+
+.latest-heading p{
+
+margin-top:5px;
+
+opacity:.7;
+
+}
+
+.all-posts{
+
+text-decoration:none;
+
+color:#2ecc71;
+
+font-weight:600;
+
+}
+
+
+/* ================= LATEST LIST ================= */
+
+.latest-list{
+
+display:flex;
+
+flex-direction:column;
+
+gap:18px;
+
+}
+
+
+/* ================= LATEST ITEM ================= */
+
+.latest-item{
+
+display:flex;
+
+align-items:center;
+
+gap:20px;
+
+padding:20px;
+
+transition:.35s;
+
+}
+
+.latest-item:hover{
+
+transform:translateX(8px);
+
+background:rgba(255,255,255,.17);
+
+}
+
+
+/* ================= LATEST ICON ================= */
+
+.latest-icon{
+
+width:65px;
+
+height:65px;
+
+min-width:65px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+border-radius:20px;
+
+background:rgba(46,204,113,.15);
+
+font-size:30px;
+
+}
+
+
+/* ================= LATEST INFO ================= */
+
+.latest-info{
+
+flex:1;
+
+}
+
+.latest-info span{
+
+font-size:11px;
+
+font-weight:700;
+
+color:#2ecc71;
+
+letter-spacing:1.5px;
+
+}
+
+.latest-info h3{
+
+font-size:18px;
+
+margin:5px 0;
+
+}
+
+.latest-info p{
+
+font-size:13px;
+
+opacity:.7;
+
+}
+
+
+/* ================= ARROW ================= */
+
+.latest-arrow{
+
+font-size:25px;
+
+color:#2ecc71;
+
+}
+
+
+/* ================= TABLET ================= */
+
+@media(max-width:950px){
+
+.post-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media(max-width:768px){
+
+.post-grid{
+
+grid-template-columns:1fr;
+
+gap:20px;
+
+}
+
+.post-image{
+
+height:220px;
+
+}
+
+.post-content{
+
+padding:22px;
+
+}
+
+.latest-heading h2{
+
+font-size:27px;
+
+}
+
+.latest-heading{
+
+align-items:center;
+
+}
+
+.latest-item{
+
+padding:16px;
+
+gap:14px;
+
+}
+
+.latest-icon{
+
+width:55px;
+
+height:55px;
+
+min-width:55px;
+
+border-radius:16px;
+
+font-size:25px;
+
+}
+
+.latest-info h3{
+
+font-size:15px;
+
+}
+
+.latest-info p{
+
+font-size:12px;
+
+line-height:1.6;
+
+}
+
+.latest-arrow{
+
+font-size:20px;
+
+}
+
+}
+
+</style>
+
+<!-- ===== PART 5 STARTS HERE ===== --><!-- ================= PHOTO GALLERY ================= -->
+
+<section id="gallery" style="padding:90px 0;">
+
+<div class="container">
+
+<h2 class="section-title">
+Photo Gallery
+</h2>
+
+<p class="section-subtitle">
+A collection of memorable moments, journeys and beautiful places.
+</p>
+
+<div class="gallery-grid">
+
+<!-- Gallery Item 1 -->
+
+<div class="gallery-item glass">
+
+<img
+src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1000"
+alt="Travel">
+
+<div class="gallery-overlay">
+
+<span>🌍 Travel</span>
+
+<h3>Beautiful Journey</h3>
+
+</div>
+
+</div>
+
+
+<!-- Gallery Item 2 -->
+
+<div class="gallery-item glass">
+
+<img
+src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1000"
+alt="Mountain">
+
+<div class="gallery-overlay">
+
+<span>🏔 Adventure</span>
+
+<h3>Mountain Escape</h3>
+
+</div>
+
+</div>
+
+
+<!-- Gallery Item 3 -->
+
+<div class="gallery-item glass">
+
+<img
+src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=1000"
+alt="Nature">
+
+<div class="gallery-overlay">
+
+<span>🌿 Nature</span>
+
+<h3>Peaceful Nature</h3>
+
+</div>
+
+</div>
+
+
+<!-- Gallery Item 4 -->
+
+<div class="gallery-item glass">
+
+<img
+src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1000"
+alt="Beach">
+
+<div class="gallery-overlay">
+
+<span>🌊 Beach</span>
+
+<h3>Ocean Memories</h3>
+
+</div>
+
+</div>
+
+
+<!-- Gallery Item 5 -->
+
+<div class="gallery-item glass">
+
+<img
+src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1000"
+alt="Mountain Landscape">
+
+<div class="gallery-overlay">
+
+<span>🏔 Landscape</span>
+
+<h3>Mountain View</h3>
+
+</div>
+
+</div>
+
+
+<!-- Gallery Item 6 -->
+
+<div class="gallery-item glass">
+
+<img
+src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1000"
+alt="Forest">
+
+<div class="gallery-overlay">
+
+<span>🌲 Forest</span>
+
+<h3>Into The Wild</h3>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- Gallery Button -->
+
+<div style="text-align:center;margin-top:40px;">
+
+<a href="#" class="btn">
+View Full Gallery →
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<style>
+
+/* ================= GALLERY GRID ================= */
+
+.gallery-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(3,1fr);
+
+grid-auto-rows:260px;
+
+gap:20px;
+
+}
+
+
+/* ================= GALLERY ITEM ================= */
+
+.gallery-item{
+
+position:relative;
+
+overflow:hidden;
+
+padding:0;
+
+cursor:pointer;
+
+transition:.4s;
+
+}
+
+
+/* ================= IMAGE ================= */
+
+.gallery-item img{
+
+width:100%;
+
+height:100%;
+
+object-fit:cover;
+
+transition:.6s;
+
+}
+
+
+/* ================= HOVER ================= */
+
+.gallery-item:hover img{
+
+transform:scale(1.1);
+
+}
+
+.gallery-item:hover{
+
+transform:translateY(-6px);
+
+}
+
+
+/* ================= OVERLAY ================= */
+
+.gallery-overlay{
+
+position:absolute;
+
+left:0;
+
+right:0;
+
+bottom:0;
+
+padding:25px;
+
+background:
+linear-gradient(
+transparent,
+rgba(0,0,0,.85)
+);
+
+transform:translateY(10px);
+
+transition:.4s;
+
+}
+
+.gallery-item:hover .gallery-overlay{
+
+transform:translateY(0);
+
+}
+
+.gallery-overlay span{
+
+font-size:12px;
+
+color:#2ecc71;
+
+font-weight:600;
+
+letter-spacing:1px;
+
+}
+
+.gallery-overlay h3{
+
+margin-top:6px;
+
+font-size:20px;
+
+}
+
+
+/* ================= SPECIAL SIZES ================= */
+
+.gallery-item:nth-child(1){
+
+grid-row:span 2;
+
+}
+
+.gallery-item:nth-child(4){
+
+grid-column:span 2;
+
+}
+
+
+/* ================= TABLET ================= */
+
+@media(max-width:950px){
+
+.gallery-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+grid-auto-rows:240px;
+
+}
+
+.gallery-item:nth-child(1){
+
+grid-row:span 1;
+
+}
+
+.gallery-item:nth-child(4){
+
+grid-column:span 1;
+
+}
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media(max-width:600px){
+
+.gallery-grid{
+
+grid-template-columns:1fr 1fr;
+
+grid-auto-rows:180px;
+
+gap:12px;
+
+}
+
+.gallery-item:nth-child(1){
+
+grid-row:span 2;
+
+}
+
+.gallery-item:nth-child(4){
+
+grid-column:span 1;
+
+}
+
+.gallery-overlay{
+
+padding:14px;
+
+}
+
+.gallery-overlay span{
+
+font-size:9px;
+
+}
+
+.gallery-overlay h3{
+
+font-size:14px;
+
+}
+
+}
+
+</style>
+
+<!-- ===== PART 6 STARTS HERE ===== --><!-- ================= ACHIEVEMENTS ================= -->
+
+<section id="achievement" style="padding:90px 0;">
+
+<div class="container">
+
+<h2 class="section-title">
+Achievements
+</h2>
+
+<p class="section-subtitle">
+A few milestones and memorable achievements from my journey.
+</p>
+
+
+<!-- ================= ACHIEVEMENT CARDS ================= -->
+
+<div class="achievement-grid">
+
+
+<!-- Achievement 1 -->
+
+<div class="glass achievement-card">
+
+<div class="achievement-icon">
+🏆
+</div>
+
+<div>
+
+<span class="achievement-year">
+2026
+</span>
+
+<h3>
+Academic Achievement
+</h3>
+
+<p>
+Successfully progressing through my academic journey
+with dedication, consistency and continuous learning.
+</p>
+
+</div>
+
+</div>
+
+
+<!-- Achievement 2 -->
+
+<div class="glass achievement-card">
+
+<div class="achievement-icon">
+🌍
+</div>
+
+<div>
+
+<span class="achievement-year">
+2026
+</span>
+
+<h3>
+Travel & Exploration
+</h3>
+
+<p>
+Exploring new places, experiencing different environments
+and collecting unforgettable memories.
+</p>
+
+</div>
+
+</div>
+
+
+<!-- Achievement 3 -->
+
+<div class="glass achievement-card">
+
+<div class="achievement-icon">
+💻
+</div>
+
+<div>
+
+<span class="achievement-year">
+2026
+</span>
+
+<h3>
+Web Development
+</h3>
+
+<p>
+Building modern responsive websites and learning
+new technologies for creative digital projects.
+</p>
+
+</div>
+
+</div>
+
+
+<!-- Achievement 4 -->
+
+<div class="glass achievement-card">
+
+<div class="achievement-icon">
+📸
+</div>
+
+<div>
+
+<span class="achievement-year">
+2026
+</span>
+
+<h3>
+Photography Collection
+</h3>
+
+<p>
+Creating a personal collection of travel,
+nature and lifestyle photographs.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- ================= JOURNEY TIMELINE ================= -->
+
+<h2 class="section-title timeline-title">
+My Journey
+</h2>
+
+
+<div class="timeline">
+
+
+<!-- Timeline 1 -->
+
+<div class="timeline-item">
+
+<div class="timeline-dot">
+</div>
+
+<div class="glass timeline-card">
+
+<span>
+2023
+</span>
+
+<h3>
+The Beginning
+</h3>
+
+<p>
+Started exploring new interests, learning new skills
+and creating personal goals for the future.
+</p>
+
+</div>
+
+</div>
+
+
+<!-- Timeline 2 -->
+
+<div class="timeline-item">
+
+<div class="timeline-dot">
+</div>
+
+<div class="glass timeline-card">
+
+<span>
+2024
+</span>
+
+<h3>
+Learning & Growth
+</h3>
+
+<p>
+Focused on education, technology and personal development
+while discovering new passions.
+</p>
+
+</div>
+
+</div>
+
+
+<!-- Timeline 3 -->
+
+<div class="timeline-item">
+
+<div class="timeline-dot">
+</div>
+
+<div class="glass timeline-card">
+
+<span>
+2025
+</span>
+
+<h3>
+New Experiences
+</h3>
+
+<p>
+Started documenting travel experiences,
+photography and different creative projects.
+</p>
+
+</div>
+
+</div>
+
+
+<!-- Timeline 4 -->
+
+<div class="timeline-item">
+
+<div class="timeline-dot">
+</div>
+
+<div class="glass timeline-card">
+
+<span>
+2026
+</span>
+
+<h3>
+Building The Future
+</h3>
+
+<p>
+Continuing to learn, explore and build new
+digital projects while working toward bigger goals.
+</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<style>
+
+/* ================= ACHIEVEMENT GRID ================= */
+
+.achievement-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(2,1fr);
+
+gap:25px;
+
+}
+
+
+/* ================= ACHIEVEMENT CARD ================= */
+
+.achievement-card{
+
+padding:30px;
+
+display:flex;
+
+align-items:flex-start;
+
+gap:22px;
+
+transition:.4s;
+
+}
+
+.achievement-card:hover{
+
+transform:translateY(-8px);
+
+background:rgba(255,255,255,.17);
+
+box-shadow:
+0 25px 50px rgba(0,0,0,.3);
+
+}
+
+
+/* ================= ACHIEVEMENT ICON ================= */
+
+.achievement-icon{
+
+width:70px;
+
+height:70px;
+
+min-width:70px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+border-radius:22px;
+
+background:
+linear-gradient(
+135deg,
+rgba(46,204,113,.25),
+rgba(0,212,255,.12)
+);
+
+font-size:34px;
+
+border:1px solid
+rgba(255,255,255,.12);
+
+}
+
+
+/* ================= YEAR ================= */
+
+.achievement-year{
+
+font-size:12px;
+
+font-weight:700;
+
+color:#2ecc71;
+
+letter-spacing:1.5px;
+
+}
+
+
+/* ================= TITLE ================= */
+
+.achievement-card h3{
+
+font-size:21px;
+
+margin:6px 0 10px;
+
+}
+
+
+/* ================= DESCRIPTION ================= */
+
+.achievement-card p{
+
+font-size:14px;
+
+line-height:1.8;
+
+opacity:.75;
+
+}
+
+
+/* ================= TIMELINE ================= */
+
+.timeline-title{
+
+margin-top:100px;
+
+}
+
+
+.timeline{
+
+position:relative;
+
+max-width:850px;
+
+margin:auto;
+
+padding:20px 0;
+
+}
+
+
+/* ================= TIMELINE LINE ================= */
+
+.timeline::before{
+
+content:"";
+
+position:absolute;
+
+left:50%;
+
+top:0;
+
+bottom:0;
+
+width:2px;
+
+background:
+linear-gradient(
+to bottom,
+transparent,
+#2ecc71,
+#00d4ff,
+transparent
+);
+
+transform:translateX(-50%);
+
+}
+
+
+/* ================= TIMELINE ITEM ================= */
+
+.timeline-item{
+
+position:relative;
+
+width:50%;
+
+padding:20px 35px;
+
+}
+
+
+/* LEFT / RIGHT */
+
+.timeline-item:nth-child(odd){
+
+left:0;
+
+text-align:right;
+
+}
+
+.timeline-item:nth-child(even){
+
+left:50%;
+
+}
+
+
+/* ================= DOT ================= */
+
+.timeline-dot{
+
+position:absolute;
+
+top:40px;
+
+width:17px;
+
+height:17px;
+
+border-radius:50%;
+
+background:#2ecc71;
+
+border:4px solid rgba(255,255,255,.8);
+
+box-shadow:
+0 0 0 6px rgba(46,204,113,.15),
+0 0 20px rgba(46,204,113,.7);
+
+z-index:2;
+
+}
+
+
+/* LEFT DOT */
+
+.timeline-item:nth-child(odd)
+.timeline-dot{
+
+right:-8px;
+
+}
+
+
+/* RIGHT DOT */
+
+.timeline-item:nth-child(even)
+.timeline-dot{
+
+left:-8px;
+
+}
+
+
+/* ================= TIMELINE CARD ================= */
+
+.timeline-card{
+
+padding:25px;
+
+transition:.35s;
+
+}
+
+.timeline-card:hover{
+
+transform:scale(1.03);
+
+}
+
+.timeline-card span{
+
+color:#2ecc71;
+
+font-size:13px;
+
+font-weight:700;
+
+letter-spacing:1px;
+
+}
+
+.timeline-card h3{
+
+font-size:21px;
+
+margin:8px 0;
+
+}
+
+.timeline-card p{
+
+font-size:14px;
+
+line-height:1.8;
+
+opacity:.75;
+
+}
+
+
+/* ================= TABLET ================= */
+
+@media(max-width:900px){
+
+.achievement-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media(max-width:768px){
+
+.achievement-card{
+
+padding:22px;
+
+gap:15px;
+
+}
+
+.achievement-icon{
+
+width:58px;
+
+height:58px;
+
+min-width:58px;
+
+font-size:27px;
+
+border-radius:18px;
+
+}
+
+.achievement-card h3{
+
+font-size:18px;
+
+}
+
+.achievement-card p{
+
+font-size:13px;
+
+}
+
+.timeline{
+
+padding-left:25px;
+
+}
+
+.timeline::before{
+
+left:10px;
+
+transform:none;
+
+}
+
+.timeline-item,
+.timeline-item:nth-child(odd),
+.timeline-item:nth-child(even){
+
+width:100%;
+
+left:0;
+
+padding:
+15px 0 15px 35px;
+
+text-align:left;
+
+}
+
+.timeline-dot,
+.timeline-item:nth-child(odd) .timeline-dot,
+.timeline-item:nth-child(even) .timeline-dot{
+
+left:2px;
+
+right:auto;
+
+top:35px;
+
+}
+
+.timeline-card{
+
+padding:20px;
+
+}
+
+.timeline-card h3{
+
+font-size:18px;
+
+}
+
+.timeline-card p{
+
+font-size:13px;
+
+}
+
+.timeline-title{
+
+margin-top:75px;
+
+}
+
+}
+
+</style>
+
+<!-- ===== PART 7 STARTS HERE ===== --><!-- ================= TRAVELING ================= -->
+
+<section id="travel" style="padding:90px 0;">
+
+<div class="container">
+
+<h2 class="section-title">
+Traveling
+</h2>
+
+<p class="section-subtitle">
+Places, adventures and experiences that made the journey memorable.
+</p>
+
+
+<!-- ================= TRAVEL FEATURE ================= -->
+
+<div class="glass travel-feature">
+
+<div class="travel-feature-image">
+
+<img
+src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1400"
+alt="Mountain Adventure">
+
+<div class="travel-badge">
+🏔 Adventure
+</div>
+
+</div>
+
+
+<div class="travel-feature-content">
+
+<span class="travel-location">
+📍 Bangladesh
+</span>
+
+<h2>
+Discover The Beauty Of Nature
+</h2>
+
+<p>
+Traveling gives us the opportunity to discover new places,
+meet new people and create memories that stay with us forever.
+</p>
+
+<div class="travel-meta">
+
+<div>
+<strong>50+</strong>
+<span>Places</span>
+</div>
+
+<div>
+<strong>20+</strong>
+<span>Trips</span>
+</div>
+
+<div>
+<strong>100+</strong>
+<span>Memories</span>
+</div>
+
+</div>
+
+<a href="#" class="btn">
+Explore Journey →
+</a>
+
+</div>
+
+</div>
+
+
+<!-- ================= DESTINATIONS ================= -->
+
+<h2 class="destination-title">
+Favorite Destinations
+</h2>
+
+<div class="destination-grid">
+
+
+<!-- Destination 1 -->
+
+<div class="glass destination-card">
+
+<div class="destination-image">
+
+<img
+src="https://images.unsplash.com/photo-1500534623283-312aade485b7?w=900"
+alt="Sea Beach">
+
+</div>
+
+<div class="destination-content">
+
+<span>🌊 Beach</span>
+
+<h3>
+Cox's Bazar
+</h3>
+
+<p>
+One of the most beautiful coastal destinations
+with a long sandy beach and peaceful atmosphere.
+</p>
+
+<a href="#" class="destination-link">
+Explore →
+</a>
+
+</div>
+
+</div>
+
+
+<!-- Destination 2 -->
+
+<div class="glass destination-card">
+
+<div class="destination-image">
+
+<img
+src="https://images.unsplash.com/photo-1511497584788-876760111969?w=900"
+alt="Forest">
+
+</div>
+
+<div class="destination-content">
+
+<span>🌲 Nature</span>
+
+<h3>
+Sylhet
+</h3>
+
+<p>
+Green hills, tea gardens, waterfalls and
+beautiful natural landscapes.
+</p>
+
+<a href="#" class="destination-link">
+Explore →
+</a>
+
+</div>
+
+</div>
+
+
+<!-- Destination 3 -->
+
+<div class="glass destination-card">
+
+<div class="destination-image">
+
+<img
+src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=900"
+alt="Mountain">
+
+</div>
+
+<div class="destination-content">
+
+<span>🏔 Mountain</span>
+
+<h3>
+Bandarban
+</h3>
+
+<p>
+A perfect destination for mountain adventures,
+hiking and breathtaking views.
+</p>
+
+<a href="#" class="destination-link">
+Explore →
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- ================= TRAVEL QUOTE ================= -->
+
+<div class="glass travel-quote">
+
+<div class="quote-icon">
+“
+</div>
+
+<h2>
+“Travel is the only thing you buy
+that makes you richer.”
+</h2>
+
+<p>
+Keep exploring. Keep discovering.
+Keep creating memories.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<style>
+
+/* ================= FEATURE ================= */
+
+.travel-feature{
+
+display:grid;
+
+grid-template-columns:
+1.1fr .9fr;
+
+overflow:hidden;
+
+padding:0;
+
+margin-bottom:70px;
+
+}
+
+
+.travel-feature-image{
+
+position:relative;
+
+min-height:430px;
+
+}
+
+
+.travel-feature-image img{
+
+width:100%;
+
+height:100%;
+
+object-fit:cover;
+
+}
+
+
+.travel-badge{
+
+position:absolute;
+
+left:25px;
+
+bottom:25px;
+
+padding:10px 18px;
+
+border-radius:30px;
+
+background:rgba(0,0,0,.55);
+
+backdrop-filter:blur(12px);
+
+font-size:13px;
+
+font-weight:600;
+
+}
+
+
+.travel-feature-content{
+
+padding:45px;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+}
+
+
+.travel-location{
+
+color:#2ecc71;
+
+font-size:13px;
+
+font-weight:600;
+
+letter-spacing:1px;
+
+}
+
+
+.travel-feature-content h2{
+
+font-size:38px;
+
+line-height:1.25;
+
+margin:15px 0;
+
+}
+
+
+.travel-feature-content p{
+
+font-size:15px;
+
+line-height:1.9;
+
+opacity:.78;
+
+}
+
+
+/* ================= TRAVEL META ================= */
+
+.travel-meta{
+
+display:flex;
+
+gap:35px;
+
+margin:30px 0 15px;
+
+}
+
+
+.travel-meta div{
+
+display:flex;
+
+flex-direction:column;
+
+}
+
+
+.travel-meta strong{
+
+font-size:25px;
+
+color:#2ecc71;
+
+}
+
+
+.travel-meta span{
+
+font-size:11px;
+
+opacity:.65;
+
+text-transform:uppercase;
+
+letter-spacing:1px;
+
+}
+
+
+/* ================= DESTINATION ================= */
+
+.destination-title{
+
+text-align:center;
+
+font-size:32px;
+
+margin-bottom:35px;
+
+}
+
+
+.destination-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(3,1fr);
+
+gap:25px;
+
+}
+
+
+.destination-card{
+
+overflow:hidden;
+
+padding:0;
+
+transition:.4s;
+
+}
+
+
+.destination-card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:
+0 25px 50px rgba(0,0,0,.35);
+
+}
+
+
+.destination-image{
+
+height:230px;
+
+overflow:hidden;
+
+}
+
+
+.destination-image img{
+
+width:100%;
+
+height:100%;
+
+object-fit:cover;
+
+transition:.6s;
+
+}
+
+
+.destination-card:hover
+.destination-image img{
+
+transform:scale(1.08);
+
+}
+
+
+.destination-content{
+
+padding:25px;
+
+}
+
+
+.destination-content span{
+
+font-size:12px;
+
+color:#2ecc71;
+
+font-weight:600;
+
+}
+
+
+.destination-content h3{
+
+font-size:24px;
+
+margin:8px 0 10px;
+
+}
+
+
+.destination-content p{
+
+font-size:13px;
+
+line-height:1.8;
+
+opacity:.75;
+
+}
+
+
+.destination-link{
+
+display:inline-block;
+
+margin-top:18px;
+
+color:#2ecc71;
+
+text-decoration:none;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+
+.destination-link:hover{
+
+letter-spacing:1px;
+
+}
+
+
+/* ================= QUOTE ================= */
+
+.travel-quote{
+
+text-align:center;
+
+margin-top:70px;
+
+padding:55px 30px;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+
+.quote-icon{
+
+font-size:90px;
+
+line-height:.5;
+
+color:#2ecc71;
+
+opacity:.5;
+
+}
+
+
+.travel-quote h2{
+
+max-width:700px;
+
+margin:25px auto 15px;
+
+font-size:30px;
+
+line-height:1.5;
+
+}
+
+
+.travel-quote p{
+
+opacity:.7;
+
+}
+
+
+/* ================= TABLET ================= */
+
+@media(max-width:950px){
+
+.travel-feature{
+
+grid-template-columns:1fr;
+
+}
+
+.travel-feature-image{
+
+min-height:350px;
+
+}
+
+.destination-grid{
+
+grid-template-columns:
+repeat(2,1fr);
+
+}
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media(max-width:768px){
+
+.travel-feature-image{
+
+min-height:270px;
+
+}
+
+.travel-feature-content{
+
+padding:28px 22px;
+
+}
+
+.travel-feature-content h2{
+
+font-size:28px;
+
+}
+
+.travel-feature-content p{
+
+font-size:14px;
+
+}
+
+.travel-meta{
+
+gap:22px;
+
+margin:25px 0 10px;
+
+}
+
+.travel-meta strong{
+
+font-size:21px;
+
+}
+
+.destination-grid{
+
+grid-template-columns:1fr;
+
+gap:18px;
+
+}
+
+.destination-title{
+
+font-size:27px;
+
+}
+
+.destination-image{
+
+height:210px;
+
+}
+
+.travel-quote{
+
+padding:40px 20px;
+
+margin-top:50px;
+
+}
+
+.travel-quote h2{
+
+font-size:22px;
+
+}
+
+}
+
+</style>
+
+<!-- ===== PART 8 STARTS HERE ===== --><!-- ================= CONTACT & MAP ================= -->
+
+<section id="contact" style="padding:90px 0;">
+
+<div class="container">
+
+<h2 class="section-title">
+Let's Connect
+</h2>
+
+<p class="section-subtitle">
+Have a question, project idea or simply want to say hello?
+I'd love to hear from you.
+</p>
+
+
+<div class="contact-grid">
+
+<!-- ================= CONTACT CARD ================= -->
+
+<div class="glass contact-card">
+
+<div class="contact-heading">
+
+<span class="small-label">
+CONTACT ME
+</span>
+
+<h2>
+Get In Touch
+</h2>
+
+<p>
+Feel free to contact me anytime.
+I will try my best to respond as soon as possible.
+</p>
+
+</div>
+
+
+<!-- Email -->
+
+<a href="mailto:your@email.com" class="contact-item">
+
+<div class="contact-icon">
+✉️
+</div>
+
+<div>
+
+<span>Email</span>
+
+<strong>
+your@email.com
+</strong>
+
+</div>
+
+<div class="contact-arrow">
+→
+</div>
+
+</a>
+
+
+<!-- Phone -->
+
+<a href="tel:+8801000000000" class="contact-item">
+
+<div class="contact-icon">
+📱
+</div>
+
+<div>
+
+<span>Phone</span>
+
+<strong>
++880 1XXXXXXXXX
+</strong>
+
+</div>
+
+<div class="contact-arrow">
+→
+</div>
+
+</a>
+
+
+<!-- Location -->
+
+<div class="contact-item">
+
+<div class="contact-icon">
+📍
+</div>
+
+<div>
+
+<span>Location</span>
+
+<strong>
+Bangladesh
+</strong>
+
+</div>
+
+</div>
+
+
+<!-- Social -->
+
+<div class="social-row">
+
+<a href="#" aria-label="Facebook">
+f
+</a>
+
+<a href="#" aria-label="Instagram">
+◎
+</a>
+
+<a href="#" aria-label="LinkedIn">
+in
+</a>
+
+<a href="#" aria-label="GitHub">
+◉
+</a>
+
+</div>
+
+</div>
+
+
+<!-- ================= CONTACT FORM ================= -->
+
+<div class="glass contact-form">
+
+<h2>
+Send Me A Message
+</h2>
+
+<p>
+I'll get back to you as soon as possible.
+</p>
+
+<form>
+
+<div class="form-row">
+
+<div class="form-group">
+
+<label>
+Your Name
+</label>
+
+<input
+type="text"
+placeholder="Enter your name"
+required>
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+Email Address
+</label>
+
+<input
+type="email"
+placeholder="Enter your email"
+required>
+
+</div>
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+Subject
+</label>
+
+<input
+type="text"
+placeholder="What is this about?"
+required>
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+Message
+</label>
+
+<textarea
+rows="6"
+placeholder="Write your message..."
+required></textarea>
+
+</div>
+
+
+<button type="button" class="form-button">
+
+Send Message
+<span>→</span>
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+
+<!-- ================= GOOGLE MAP ================= -->
+
+<div id="map" class="map-wrapper">
+
+<div class="map-heading">
+
+<div>
+
+<span class="small-label">
+LOCATION
+</span>
+
+<h2>
+Find Me On The Map
+</h2>
+
+</div>
+
+<span class="map-pin">
+📍 Bangladesh
+</span>
+
+</div>
+
+
+<div class="glass map-card">
+
+<iframe
+src="https://www.google.com/maps?q=Dhaka,Bangladesh&output=embed"
+loading="lazy"
+allowfullscreen>
+</iframe>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<style>
+
+/* ================= CONTACT GRID ================= */
+
+.contact-grid{
+
+display:grid;
+
+grid-template-columns:
+.9fr 1.1fr;
+
+gap:25px;
+
+}
+
+
+/* ================= CONTACT CARD ================= */
+
+.contact-card{
+
+padding:35px;
+
+}
+
+
+.small-label{
+
+font-size:11px;
+
+font-weight:700;
+
+letter-spacing:2px;
+
+color:#2ecc71;
+
+}
+
+
+.contact-heading h2{
+
+font-size:34px;
+
+margin:8px 0 10px;
+
+}
+
+
+.contact-heading p{
+
+font-size:14px;
+
+line-height:1.8;
+
+opacity:.7;
+
+margin-bottom:25px;
+
+}
+
+
+/* ================= CONTACT ITEM ================= */
+
+.contact-item{
+
+display:flex;
+
+align-items:center;
+
+gap:15px;
+
+padding:16px;
+
+margin-top:12px;
+
+border-radius:18px;
+
+background:rgba(255,255,255,.07);
+
+border:1px solid rgba(255,255,255,.08);
+
+text-decoration:none;
+
+color:#fff;
+
+transition:.35s;
+
+}
+
+
+.contact-item:hover{
+
+background:rgba(255,255,255,.14);
+
+transform:translateX(5px);
+
+}
+
+
+.contact-icon{
+
+width:48px;
+
+height:48px;
+
+min-width:48px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+border-radius:15px;
+
+background:rgba(46,204,113,.15);
+
+font-size:21px;
+
+}
+
+
+.contact-item div:nth-child(2){
+
+flex:1;
+
+}
+
+
+.contact-item span{
+
+display:block;
+
+font-size:11px;
+
+color:#2ecc71;
+
+margin-bottom:3px;
+
+}
+
+
+.contact-item strong{
+
+font-size:14px;
+
+font-weight:500;
+
+}
+
+
+.contact-arrow{
+
+font-size:20px;
+
+color:#2ecc71;
+
+}
+
+
+/* ================= SOCIAL ================= */
+
+.social-row{
+
+display:flex;
+
+gap:12px;
+
+margin-top:25px;
+
+}
+
+
+.social-row a{
+
+width:45px;
+
+height:45px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+border-radius:50%;
+
+background:rgba(255,255,255,.08);
+
+border:1px solid rgba(255,255,255,.1);
+
+color:white;
+
+text-decoration:none;
+
+font-weight:700;
+
+transition:.35s;
+
+}
+
+
+.social-row a:hover{
+
+background:#2ecc71;
+
+color:#101820;
+
+transform:translateY(-5px);
+
+}
+
+
+/* ================= FORM ================= */
+
+.contact-form{
+
+padding:35px;
+
+}
+
+
+.contact-form h2{
+
+font-size:30px;
+
+margin-bottom:6px;
+
+}
+
+
+.contact-form > p{
+
+font-size:13px;
+
+opacity:.65;
+
+margin-bottom:25px;
+
+}
+
+
+.form-row{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:15px;
+
+}
+
+
+.form-group{
+
+margin-bottom:18px;
+
+}
+
+
+.form-group label{
+
+display:block;
+
+font-size:12px;
+
+font-weight:600;
+
+margin-bottom:8px;
+
+opacity:.85;
+
+}
+
+
+.form-group input,
+.form-group textarea{
+
+width:100%;
+
+border:none;
+
+outline:none;
+
+padding:14px 16px;
+
+border-radius:15px;
+
+background:rgba(255,255,255,.09);
+
+border:1px solid rgba(255,255,255,.1);
+
+color:white;
+
+font-family:inherit;
+
+font-size:13px;
+
+transition:.3s;
+
+}
+
+
+.form-group textarea{
+
+resize:vertical;
+
+min-height:140px;
+
+}
+
+
+.form-group input::placeholder,
+.form-group textarea::placeholder{
+
+color:rgba(255,255,255,.45);
+
+}
+
+
+.form-group input:focus,
+.form-group textarea:focus{
+
+border-color:#2ecc71;
+
+background:rgba(255,255,255,.13);
+
+box-shadow:
+0 0 0 3px rgba(46,204,113,.08);
+
+}
+
+
+/* ================= FORM BUTTON ================= */
+
+.form-button{
+
+width:100%;
+
+border:none;
+
+outline:none;
+
+padding:15px 22px;
+
+border-radius:16px;
+
+background:
+linear-gradient(
+135deg,
+#2ecc71,
+#16a085
+);
+
+color:white;
+
+font-family:inherit;
+
+font-size:15px;
+
+font-weight:700;
+
+cursor:pointer;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+gap:15px;
+
+transition:.35s;
+
+}
+
+
+.form-button span{
+
+font-size:20px;
+
+}
+
+
+.form-button:hover{
+
+transform:translateY(-3px);
+
+box-shadow:
+0 12px 25px rgba(46,204,113,.2);
+
+}
+
+
+/* ================= MAP ================= */
+
+.map-wrapper{
+
+margin-top:70px;
+
+}
+
+
+.map-heading{
+
+display:flex;
+
+align-items:end;
+
+justify-content:space-between;
+
+margin-bottom:22px;
+
+}
+
+
+.map-heading h2{
+
+font-size:32px;
+
+margin-top:7px;
+
+}
+
+
+.map-pin{
+
+font-size:13px;
+
+opacity:.75;
+
+}
+
+
+.map-card{
+
+padding:8px;
+
+overflow:hidden;
+
+}
+
+
+.map-card iframe{
+
+display:block;
+
+width:100%;
+
+height:400px;
+
+border:none;
+
+border-radius:20px;
+
+filter:saturate(.9);
+
+}
+
+
+/* ================= TABLET ================= */
+
+@media(max-width:900px){
+
+.contact-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media(max-width:768px){
+
+.contact-card,
+.contact-form{
+
+padding:24px;
+
+}
+
+.contact-heading h2{
+
+font-size:28px;
+
+}
+
+.form-row{
+
+grid-template-columns:1fr;
+
+gap:0;
+
+}
+
+.map-wrapper{
+
+margin-top:55px;
+
+}
+
+.map-heading{
+
+align-items:flex-start;
+
+flex-direction:column;
+
+gap:12px;
+
+}
+
+.map-heading h2{
+
+font-size:27px;
+
+}
+
+.map-pin{
+
+font-size:12px;
+
+}
+
+.map-card{
+
+padding:5px;
+
+}
+
+.map-card iframe{
+
+height:300px;
+
+}
+
+.contact-item strong{
+
+font-size:13px;
+
+}
+
+}
+
+</style>
+
+<!-- ===== PART 9 STARTS HERE ===== --><!-- ================= PREMIUM FOOTER ================= -->
+
+<footer class="premium-footer">
+
+<div class="container">
+
+<div class="footer-main">
+
+<!-- FOOTER BRAND -->
+
+<div class="footer-brand">
+
+<div class="footer-logo">
+Md Mahadi Hasan
+</div>
+
+<p>
+Traveler • Blogger • Explorer
+</p>
+
+<p class="footer-description">
+Exploring the world, capturing beautiful moments
+and sharing meaningful experiences.
+</p>
+
+<div class="footer-social">
+
+<a href="#" aria-label="Facebook">f</a>
+
+<a href="#" aria-label="Instagram">◎</a>
+
+<a href="#" aria-label="LinkedIn">in</a>
+
+<a href="#" aria-label="GitHub">◉</a>
+
+</div>
+
+</div>
+
+
+<!-- QUICK LINKS -->
+
+<div class="footer-column">
+
+<h3>
+Quick Links
+</h3>
+
+<a href="#">
+Home
+</a>
+
+<a href="about.html">
+About
+</a>
+
+<a href="blog.html">
+Blog
+</a>
+
+<a href="traveling.html">
+Traveling
+</a>
+
+</div>
+
+
+<!-- EXPLORE -->
+
+<div class="footer-column">
+
+<h3>
+Explore
+</h3>
+
+<a href="gallery.html">
+Gallery
+</a>
+
+<a href="achievements.html">
+Achievements
+</a>
+
+<a href="map.html">
+Map
+</a>
+
+<a href="contact.html">
+Contact
+</a>
+
+</div>
+
+
+<!-- NEWSLETTER -->
+
+<div class="footer-newsletter">
+
+<h3>
+Stay Connected
+</h3>
+
+<p>
+Get updates about new stories,
+travels and projects.
+</p>
+
+<form class="newsletter-form">
+
+<input
+type="email"
+placeholder="Your email address"
+required>
+
+<button type="button">
+→
+</button>
+
+</form>
+
+<small>
+No spam. Only useful updates.
+</small>
+
+</div>
+
+</div>
+
+
+<!-- FOOTER LINE -->
+
+<div class="footer-line">
+</div>
+
+
+<!-- FOOTER BOTTOM -->
+
+<div class="footer-bottom">
+
+<p>
+© 2026 <strong>Md Mahadi Hasan</strong>.
+All Rights Reserved.
+</p>
+
+<div class="footer-bottom-links">
+
+<a href="#">
+Privacy
+</a>
+
+<span>•</span>
+
+<a href="#">
+Terms
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</footer>
+
+
+<!-- ================= BACK TO TOP ================= -->
+
+<button
+id="backToTop"
+aria-label="Back to top">
+
+↑
+
+</button>
+
+
+<style>
+
+/* ================= FOOTER ================= */
+
+.premium-footer{
+
+margin-top:50px;
+
+padding:80px 0 30px;
+
+background:
+linear-gradient(
+180deg,
+rgba(0,0,0,.15),
+rgba(0,0,0,.55)
+);
+
+border-top:
+1px solid rgba(255,255,255,.1);
+
+}
+
+
+/* ================= FOOTER MAIN ================= */
+
+.footer-main{
+
+display:grid;
+
+grid-template-columns:
+1.5fr
+.8fr
+.8fr
+1.3fr;
+
+gap:45px;
+
+}
+
+
+/* ================= FOOTER LOGO ================= */
+
+.footer-logo{
+
+font-size:28px;
+
+font-weight:800;
+
+letter-spacing:-.5px;
+
+}
+
+
+.footer-brand > p{
+
+margin-top:8px;
+
+opacity:.75;
+
+font-size:14px;
+
+}
+
+
+.footer-description{
+
+max-width:330px;
+
+line-height:1.8;
+
+font-size:13px !important;
+
+margin-top:18px !important;
+
+opacity:.65 !important;
+
+}
+
+
+/* ================= FOOTER SOCIAL ================= */
+
+.footer-social{
+
+display:flex;
+
+gap:10px;
+
+margin-top:25px;
+
+}
+
+
+.footer-social a{
+
+width:42px;
+
+height:42px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+border-radius:50%;
+
+background:
+rgba(255,255,255,.08);
+
+border:
+1px solid rgba(255,255,255,.1);
+
+color:white;
+
+text-decoration:none;
+
+font-weight:700;
+
+transition:.3s;
+
+}
+
+
+.footer-social a:hover{
+
+background:#2ecc71;
+
+color:#111;
+
+transform:
+translateY(-5px);
+
+}
+
+
+/* ================= FOOTER COLUMNS ================= */
+
+.footer-column{
+
+display:flex;
+
+flex-direction:column;
+
+gap:13px;
+
+}
+
+
+.footer-column h3,
+.footer-newsletter h3{
+
+font-size:17px;
+
+margin-bottom:8px;
+
+}
+
+
+.footer-column a{
+
+color:rgba(255,255,255,.65);
+
+text-decoration:none;
+
+font-size:13px;
+
+transition:.3s;
+
+}
+
+
+.footer-column a:hover{
+
+color:#2ecc71;
+
+transform:translateX(5px);
+
+}
+
+
+/* ================= NEWSLETTER ================= */
+
+.footer-newsletter p{
+
+font-size:13px;
+
+line-height:1.7;
+
+opacity:.65;
+
+margin-bottom:18px;
+
+}
+
+
+.newsletter-form{
+
+display:flex;
+
+height:50px;
+
+background:
+rgba(255,255,255,.08);
+
+border:
+1px solid rgba(255,255,255,.12);
+
+border-radius:15px;
+
+overflow:hidden;
+
+}
+
+
+.newsletter-form input{
+
+flex:1;
+
+min-width:0;
+
+border:none;
+
+outline:none;
+
+background:transparent;
+
+padding:0 15px;
+
+color:white;
+
+font-family:inherit;
+
+font-size:12px;
+
+}
+
+
+.newsletter-form input::placeholder{
+
+color:rgba(255,255,255,.4);
+
+}
+
+
+.newsletter-form button{
+
+width:55px;
+
+border:none;
+
+background:#2ecc71;
+
+color:#101820;
+
+font-size:20px;
+
+font-weight:bold;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+
+.newsletter-form button:hover{
+
+background:#27ae60;
+
+}
+
+
+.footer-newsletter small{
+
+display:block;
+
+margin-top:10px;
+
+font-size:10px;
+
+opacity:.45;
+
+}
+
+
+/* ================= FOOTER LINE ================= */
+
+.footer-line{
+
+height:1px;
+
+background:
+rgba(255,255,255,.1);
+
+margin:55px 0 25px;
+
+}
+
+
+/* ================= FOOTER BOTTOM ================= */
+
+.footer-bottom{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+gap:20px;
+
+}
+
+
+.footer-bottom p{
+
+font-size:11px;
+
+opacity:.55;
+
+}
+
+
+.footer-bottom strong{
+
+color:#2ecc71;
+
+font-weight:600;
+
+}
+
+
+.footer-bottom-links{
+
+display:flex;
+
+align-items:center;
+
+gap:10px;
+
+}
+
+
+.footer-bottom-links a{
+
+color:rgba(255,255,255,.55);
+
+font-size:11px;
+
+text-decoration:none;
+
+transition:.3s;
+
+}
+
+
+.footer-bottom-links a:hover{
+
+color:#2ecc71;
+
+}
+
+
+.footer-bottom-links span{
+
+opacity:.3;
+
+}
+
+
+/* ================= BACK TO TOP ================= */
+
+#backToTop{
+
+position:fixed;
+
+right:22px;
+
+bottom:25px;
+
+width:50px;
+
+height:50px;
+
+border:none;
+
+border-radius:50%;
+
+background:
+linear-gradient(
+135deg,
+#2ecc71,
+#16a085
+);
+
+color:white;
+
+font-size:23px;
+
+font-weight:bold;
+
+cursor:pointer;
+
+box-shadow:
+0 12px 30px rgba(0,0,0,.35);
+
+opacity:0;
+
+visibility:hidden;
+
+transform:translateY(15px);
+
+transition:.35s;
+
+z-index:999;
+
+}
+
+
+#backToTop.show{
+
+opacity:1;
+
+visibility:visible;
+
+transform:translateY(0);
+
+}
+
+
+#backToTop:hover{
+
+transform:
+translateY(-5px);
+
+}
+
+
+/* ================= TABLET ================= */
+
+@media(max-width:950px){
+
+.footer-main{
+
+grid-template-columns:
+1fr 1fr;
+
+gap:40px;
+
+}
+
+.footer-brand{
+
+grid-column:span 2;
+
+}
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media(max-width:600px){
+
+.premium-footer{
+
+padding:60px 0 25px;
+
+}
+
+
+.footer-main{
+
+grid-template-columns:1fr;
+
+gap:35px;
+
+}
+
+
+.footer-brand{
+
+grid-column:auto;
+
+}
+
+
+.footer-logo{
+
+font-size:25px;
+
+}
+
+
+.footer-description{
+
+max-width:100%;
+
+}
+
+
+.footer-column{
+
+gap:11px;
+
+}
+
+
+.footer-newsletter{
+
+width:100%;
+
+}
+
+
+.footer-bottom{
+
+flex-direction:column;
+
+text-align:center;
+
+gap:12px;
+
+}
+
+
+#backToTop{
+
+width:45px;
+
+height:45px;
+
+right:15px;
+
+bottom:20px;
+
+}
+
+}
+
+</style>
+
+
+<script>
+
+/* ================= BACK TO TOP ================= */
+
+const backToTop =
+document.getElementById("backToTop");
+
+window.addEventListener("scroll", function(){
+
+if(window.scrollY > 500){
+
+backToTop.classList.add("show");
+
+}else{
+
+backToTop.classList.remove("show");
+
+}
+
+});
+
+
+backToTop.addEventListener("click", function(){
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+});
+
+</script>
+
+
+<!-- ===== PART 10 STARTS HERE ===== --><!-- ================= FINAL PREMIUM POLISH ================= -->
+
+<div class="page-glow glow-one"></div>
+<div class="page-glow glow-two"></div>
+
+
+<!-- ================= MOBILE BOTTOM NAVIGATION ================= -->
+
+<div class="mobile-nav">
+
+<a href="#" class="mobile-nav-item active">
+
+<span>⌂</span>
+
+<small>Home</small>
+
+</a>
+
+
+<a href="#about" class="mobile-nav-item">
+
+<span>♙</span>
+
+<small>About</small>
+
+</a>
+
+
+<a href="#blog" class="mobile-nav-item">
+
+<span>✦</span>
+
+<small>Blog</small>
+
+</a>
+
+
+<a href="#gallery" class="mobile-nav-item">
+
+<span>▣</span>
+
+<small>Gallery</small>
+
+</a>
+
+
+<a href="#contact" class="mobile-nav-item">
+
+<span>✉</span>
+
+<small>Contact</small>
+
+</a>
+
+</div>
+
+
+<!-- ================= PAGE LOADER ================= -->
+
+<div id="pageLoader">
+
+<div class="loader-content">
+
+<div class="loader-logo">
+MH
+</div>
+
+<div class="loader-line">
+
+<span></span>
+
+</div>
+
+<p>
+Loading Experience...
+</p>
+
+</div>
+
+</div>
+
+
+<style>
+
+/* ================= PAGE GLOW ================= */
+
+.page-glow{
+
+position:fixed;
+
+width:350px;
+
+height:350px;
+
+border-radius:50%;
+
+filter:blur(100px);
+
+opacity:.08;
+
+pointer-events:none;
+
+z-index:-1;
+
+}
+
+.glow-one{
+
+top:15%;
+
+left:-180px;
+
+background:#2ecc71;
+
+}
+
+.glow-two{
+
+bottom:10%;
+
+right:-180px;
+
+background:#00d4ff;
+
+}
+
+
+/* ================= SCROLL REVEAL ================= */
+
+.reveal{
+
+opacity:0;
+
+transform:translateY(30px);
+
+transition:
+opacity .8s ease,
+transform .8s ease;
+
+}
+
+.reveal.visible{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+
+/* ================= MOBILE NAV ================= */
+
+.mobile-nav{
+
+display:none;
+
+}
+
+
+/* ================= LOADER ================= */
+
+#pageLoader{
+
+position:fixed;
+
+inset:0;
+
+z-index:99999;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+background:#0b1713;
+
+transition:
+opacity .6s ease,
+visibility .6s ease;
+
+}
+
+
+#pageLoader.hide{
+
+opacity:0;
+
+visibility:hidden;
+
+}
+
+
+.loader-content{
+
+text-align:center;
+
+}
+
+
+.loader-logo{
+
+width:75px;
+
+height:75px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+margin:auto;
+
+border-radius:24px;
+
+background:
+linear-gradient(
+135deg,
+#2ecc71,
+#16a085
+);
+
+font-size:25px;
+
+font-weight:800;
+
+box-shadow:
+0 15px 40px rgba(46,204,113,.2);
+
+animation:
+loaderPulse 1.5s infinite;
+
+}
+
+
+.loader-line{
+
+width:150px;
+
+height:3px;
+
+margin:25px auto 15px;
+
+border-radius:20px;
+
+overflow:hidden;
+
+background:
+rgba(255,255,255,.1);
+
+}
+
+
+.loader-line span{
+
+display:block;
+
+height:100%;
+
+width:40%;
+
+background:#2ecc71;
+
+border-radius:20px;
+
+animation:
+loaderMove 1.2s infinite;
+
+}
+
+
+.loader-content p{
+
+font-size:11px;
+
+letter-spacing:2px;
+
+opacity:.5;
+
+}
+
+
+/* ================= ANIMATIONS ================= */
+
+@keyframes loaderPulse{
+
+0%,100%{
+
+transform:scale(1);
+
+}
+
+50%{
+
+transform:scale(1.08);
+
+}
+
+}
+
+
+@keyframes loaderMove{
+
+0%{
+
+transform:translateX(-100%);
+
+}
+
+100%{
+
+transform:translateX(350%);
+
+}
+
+}
+
+
+/* ================= DESKTOP HOVER POLISH ================= */
+
+@media(min-width:769px){
+
+.glass{
+
+transition:
+transform .4s ease,
+background .4s ease,
+box-shadow .4s ease;
+
+}
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media(max-width:768px){
+
+body{
+
+padding-bottom:90px;
+
+}
+
+
+.mobile-nav{
+
+position:fixed;
+
+left:50%;
+
+bottom:14px;
+
+transform:translateX(-50%);
+
+width:calc(100% - 24px);
+
+max-width:430px;
+
+height:68px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-around;
+
+padding:7px;
+
+background:
+rgba(12,25,20,.78);
+
+backdrop-filter:
+blur(25px);
+
+-webkit-backdrop-filter:
+blur(25px);
+
+border:
+1px solid rgba(255,255,255,.13);
+
+border-radius:24px;
+
+box-shadow:
+0 15px 40px rgba(0,0,0,.45);
+
+z-index:9990;
+
+}
+
+
+.mobile-nav-item{
+
+position:relative;
+
+width:20%;
+
+height:55px;
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+justify-content:center;
+
+gap:3px;
+
+color:
+rgba(255,255,255,.6);
+
+text-decoration:none;
+
+border-radius:18px;
+
+transition:.3s;
+
+}
+
+
+.mobile-nav-item span{
+
+font-size:21px;
+
+line-height:1;
+
+}
+
+
+.mobile-nav-item small{
+
+font-size:9px;
+
+}
+
+
+.mobile-nav-item.active{
+
+color:#2ecc71;
+
+background:
+rgba(46,204,113,.1);
+
+}
+
+
+.mobile-nav-item:active{
+
+transform:scale(.9);
+
+}
+
+
+/* Smaller spacing */
+
+.container{
+
+width:calc(100% - 28px);
+
+}
+
+
+.section{
+
+padding-top:65px !important;
+
+padding-bottom:65px !important;
+
+}
+
+
+/* Improve buttons */
+
+.btn{
+
+min-height:52px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+}
+
+
+/* Improve cards */
+
+.glass{
+
+border-radius:24px;
+
+}
+
+
+/* Remove fixed desktop background */
+
+body{
+
+background-attachment:scroll;
+
+}
+
+}
+
+
+/* ================= VERY SMALL PHONES ================= */
+
+@media(max-width:380px){
+
+.mobile-nav{
+
+width:calc(100% - 16px);
+
+bottom:8px;
+
+height:64px;
+
+}
+
+
+.mobile-nav-item span{
+
+font-size:19px;
+
+}
+
+
+.mobile-nav-item small{
+
+font-size:8px;
+
+}
+
+}
+
+
+/* ================= REDUCED MOTION ================= */
+
+@media(prefers-reduced-motion:reduce){
+
+*{
+
+scroll-behavior:auto !important;
+
+animation:none !important;
+
+transition:none !important;
+
+}
+
+}
+
+</style>
+
+
+<script>
+
+/* ================= PAGE LOADER ================= */
+
+window.addEventListener("load",function(){
+
+setTimeout(function(){
+
+const loader =
+document.getElementById("pageLoader");
+
+if(loader){
+
+loader.classList.add("hide");
+
+}
+
+},700);
+
+});
+
+
+/* ================= SCROLL REVEAL ================= */
+
+const revealElements =
+document.querySelectorAll(
+".glass, .section-title, .section-subtitle"
+);
+
+
+const revealObserver =
+new IntersectionObserver(
+
+(entries)=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.classList.add("reveal");
+
+setTimeout(()=>{
+
+entry.target.classList.add("visible");
+
+},50);
+
+revealObserver.unobserve(
+entry.target
+);
+
+}
+
+});
+
+},
+
+{
+
+threshold:.08
+
+});
+
+
+revealElements.forEach(element=>{
+
+revealObserver.observe(element);
+
+});
+
+
+/* ================= MOBILE NAV ACTIVE ================= */
+
+const mobileItems =
+document.querySelectorAll(
+".mobile-nav-item"
+);
+
+
+mobileItems.forEach(item=>{
+
+item.addEventListener(
+"click",
+function(){
+
+mobileItems.forEach(navItem=>{
+
+navItem.classList.remove(
+"active"
+);
+
+});
+
+this.classList.add("active");
+
+});
+
+});
+
+
+/* ================= UPDATE ACTIVE NAV ON SCROLL ================= */
+
+const sections = [
+
+{ id:"about", index:1 },
+
+{ id:"blog", index:2 },
+
+{ id:"gallery", index:3 },
+
+{ id:"contact", index:4 }
+
+];
+
+
+window.addEventListener(
+"scroll",
+function(){
+
+let current = 0;
+
+sections.forEach(section=>{
+
+const element =
+document.getElementById(
+section.id
+);
+
+if(element){
+
+const top =
+element.getBoundingClientRect().top;
+
+if(top < 180){
+
+current = section.index;
+
+}
+
+}
+
+});
+
+
+mobileItems.forEach(
+(item,index)=>{
+
+item.classList.toggle(
+"active",
+index === current
+);
+
+});
+
+});
+
+</script>
+
+<!-- ===== PART 11 STARTS HERE ===== --><!-- ================= PART 11 ================= -->
+
+<script>
+
+/* ==========================================
+   SMOOTH NAVIGATION
+========================================== */
+
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+
+    link.addEventListener("click", function(e){
+
+        const targetId = this.getAttribute("href");
+
+        if(
+            targetId &&
+            targetId !== "#" &&
+            document.querySelector(targetId)
+        ){
+
+            e.preventDefault();
+
+            const target =
+                document.querySelector(targetId);
+
+            const offset = 20;
+
+            const position =
+                target.getBoundingClientRect().top +
+                window.pageYOffset -
+                offset;
+
+            window.scrollTo({
+
+                top: position,
+
+                behavior: "smooth"
+
+            });
+
+        }
+
+    });
+
+});
+
+
+/* ==========================================
+   BUTTON RIPPLE EFFECT
+========================================== */
+
+document.querySelectorAll(".btn").forEach(button => {
+
+    button.addEventListener("click", function(e){
+
+        const ripple =
+            document.createElement("span");
+
+        ripple.classList.add("ripple");
+
+        const rect =
+            this.getBoundingClientRect();
+
+        ripple.style.left =
+            (e.clientX - rect.left) + "px";
+
+        ripple.style.top =
+            (e.clientY - rect.top) + "px";
+
+        this.appendChild(ripple);
+
+        setTimeout(() => {
+
+            ripple.remove();
+
+        }, 600);
+
+    });
+
+});
+
+
+/* ==========================================
+   DYNAMIC YEAR
+========================================== */
+
+const yearElements =
+    document.querySelectorAll(".current-year");
+
+const currentYear =
+    new Date().getFullYear();
+
+yearElements.forEach(element => {
+
+    element.textContent =
+        currentYear;
+
+});
+
+
+/* ==========================================
+   CONTACT FORM FEEDBACK
+========================================== */
+
+const contactForm =
+    document.querySelector(".contact-form form");
+
+if(contactForm){
+
+    const sendButton =
+        contactForm.querySelector(".form-button");
+
+    if(sendButton){
+
+        sendButton.addEventListener(
+            "click",
+            function(){
+
+                const inputs =
+                    contactForm.querySelectorAll(
+                        "input, textarea"
+                    );
+
+                let valid = true;
+
+                inputs.forEach(input => {
+
+                    if(!input.value.trim()){
+
+                        valid = false;
+
+                        input.style.borderColor =
+                            "#ff6b6b";
+
+                    }else{
+
+                        input.style.borderColor =
+                            "rgba(46,204,113,.5)";
+
+                    }
+
+                });
+
+
+                if(!valid){
+
+                    return;
+
+                }
+
+
+                const original =
+                    sendButton.innerHTML;
+
+                sendButton.innerHTML =
+                    "✓ Message Ready";
+
+                sendButton.style.background =
+                    "linear-gradient(135deg,#27ae60,#16a085)";
+
+
+                setTimeout(() => {
+
+                    sendButton.innerHTML =
+                        original;
+
+                },2500);
+
+            }
+        );
+
+    }
+
+}
+
+
+/* ==========================================
+   NEWSLETTER FEEDBACK
+========================================== */
+
+const newsletter =
+    document.querySelector(".newsletter-form");
+
+if(newsletter){
+
+    const email =
+        newsletter.querySelector("input");
+
+    const button =
+        newsletter.querySelector("button");
+
+    if(button){
+
+        button.addEventListener(
+            "click",
+            function(){
+
+                if(
+                    email &&
+                    email.value.includes("@")
+                ){
+
+                    const old =
+                        button.innerHTML;
+
+                    button.innerHTML = "✓";
+
+                    setTimeout(() => {
+
+                        button.innerHTML =
+                            old;
+
+                    },2000);
+
+                }else{
+
+                    email.focus();
+
+                }
+
+            }
+        );
+
+    }
+
+}
+
+
+/* ==========================================
+   IMAGE FALLBACK
+========================================== */
+
+document.querySelectorAll("img").forEach(img => {
+
+    img.addEventListener(
+        "error",
+        function(){
+
+            this.style.opacity = ".35";
+
+            this.alt =
+                "Image unavailable";
+
+        }
+    );
+
+});
+
+
+/* ==========================================
+   PREVENT EMPTY LINKS
+========================================== */
+
+document.querySelectorAll(
+    'a[href="#"]'
+).forEach(link => {
+
+    link.addEventListener(
+        "click",
+        function(e){
+
+            e.preventDefault();
+
+        }
+    );
+
+});
+
+</script>
+
+
+<style>
+
+/* ==========================================
+   RIPPLE EFFECT
+========================================== */
+
+.btn{
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.ripple{
+
+position:absolute;
+
+width:10px;
+
+height:10px;
+
+border-radius:50%;
+
+background:
+rgba(255,255,255,.45);
+
+transform:
+translate(-50%,-50%);
+
+animation:
+rippleAnimation .6s linear;
+
+pointer-events:none;
+
+}
+
+@keyframes rippleAnimation{
+
+0%{
+
+width:10px;
+
+height:10px;
+
+opacity:.8;
+
+}
+
+100%{
+
+width:400px;
+
+height:400px;
+
+opacity:0;
+
+}
+
+}
+
+
+/* ==========================================
+   BETTER MOBILE TOUCH
+========================================== */
+
+@media(max-width:768px){
+
+a,
+button{
+
+-webkit-tap-highlight-color:
+transparent;
+
+}
+
+button{
+
+touch-action:manipulation;
+
+}
+
+}
+
+
+/* ==========================================
+   IMAGE LOADING EFFECT
+========================================== */
+
+img{
+
+background:
+rgba(255,255,255,.05);
+
+}
+
+
+/* ==========================================
+   FORM ERROR
+========================================== */
+
+.form-group input:focus,
+.form-group textarea:focus{
+
+border-color:#2ecc71 !important;
+
+}
+
+
+/* ==========================================
+   PREMIUM SELECTION
+========================================== */
+
+::selection{
+
+background:#2ecc71;
+
+color:#07110d;
+
+}
+
+</style>
+
+
+<!-- ===== PART 12 STARTS HERE ===== --><!-- ================= PART 12 : FINAL ================= -->
+
+<script>
+
+/* ==========================================
+   FINAL SAFETY CHECK
+========================================== */
+
+document.addEventListener("DOMContentLoaded", function(){
+
+    /* Make external images load smoothly */
+
+    document.querySelectorAll("img").forEach(function(img){
+
+        img.loading = "lazy";
+
+    });
+
+
+    /* Prevent accidental form submission */
+
+    document.querySelectorAll("form").forEach(function(form){
+
+        form.addEventListener("submit", function(e){
+
+            e.preventDefault();
+
+        });
+
+    });
+
+});
+
+
+/* ==========================================
+   ACTIVE DESKTOP NAVIGATION
+========================================== */
+
+const desktopLinks =
+    document.querySelectorAll("nav a");
+
+const pageSections = [
+    "about",
+    "blog",
+    "travel",
+    "gallery",
+    "achievement",
+    "contact"
+];
+
+
+window.addEventListener("scroll", function(){
+
+    let currentSection = "";
+
+    pageSections.forEach(function(id){
+
+        const section =
+            document.getElementById(id);
+
+        if(section){
+
+            const sectionTop =
+                section.getBoundingClientRect().top;
+
+            if(sectionTop <= 180){
+
+                currentSection = id;
+
+            }
+
+        }
+
+    });
+
+
+    desktopLinks.forEach(function(link){
+
+        link.classList.remove("nav-active");
+
+        const href =
+            link.getAttribute("href");
+
+        if(
+            href === "#" + currentSection
+        ){
+
+            link.classList.add("nav-active");
+
+        }
+
+    });
+
+});
+
+</script>
+
+
+<style>
+
+/* ==========================================
+   ACTIVE NAV
+========================================== */
+
+nav a.nav-active{
+
+    background:
+    linear-gradient(
+        135deg,
+        #2ecc71,
+        #16a085
+    );
+
+    color:#07110d;
+
+    border-color:
+    rgba(255,255,255,.25);
+
+    box-shadow:
+    0 8px 20px
+    rgba(46,204,113,.18);
+
+}
+
+
+/* ==========================================
+   FINAL PREMIUM SECTION TITLE
+========================================== */
+
+.section-title{
+
+    font-size:38px;
+
+    font-weight:800;
+
+    text-align:center;
+
+    line-height:1.2;
+
+    margin-bottom:25px;
+
+    letter-spacing:-.5px;
+
+}
+
+
+.section-title::after{
+
+    content:"";
+
+    display:block;
+
+    width:45px;
+
+    height:4px;
+
+    margin:15px auto 0;
+
+    border-radius:20px;
+
+    background:
+    linear-gradient(
+        90deg,
+        #2ecc71,
+        #00d4ff
+    );
+
+}
+
+
+/* ==========================================
+   FINAL MOBILE TITLE
+========================================== */
+
+@media(max-width:768px){
+
+    .section-title{
+
+        font-size:29px;
+
+    }
+
+}
+
+
+/* ==========================================
+   PREMIUM PAGE TRANSITION
+========================================== */
+
+body{
+
+    overflow-x:hidden;
+
+}
+
+
+/* ==========================================
+   BETTER BUTTON TOUCH AREA
+========================================== */
+
+.btn,
+.form-button{
+
+    user-select:none;
+
+    -webkit-user-select:none;
+
+}
+
+
+/* ==========================================
+   PREMIUM GLASS EFFECT
+========================================== */
+
+.glass{
+
+    background:
+    linear-gradient(
+        135deg,
+        rgba(255,255,255,.14),
+        rgba(255,255,255,.06)
+    );
+
+    backdrop-filter:
+    blur(24px)
+    saturate(130%);
+
+    -webkit-backdrop-filter:
+    blur(24px)
+    saturate(130%);
+
+}
+
+
+/* ==========================================
+   MOBILE GLASS
+========================================== */
+
+@media(max-width:768px){
+
+    .glass{
+
+        backdrop-filter:
+        blur(18px);
+
+        -webkit-backdrop-filter:
+        blur(18px);
+
+    }
+
+}
+
+
+/* ==========================================
+   FINAL FOOTER SPACING
+========================================== */
+
+.premium-footer{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+/* ==========================================
+   FOOTER GLOW
+========================================== */
+
+.premium-footer::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:300px;
+
+    height:300px;
+
+    border-radius:50%;
+
+    background:#2ecc71;
+
+    opacity:.035;
+
+    filter:blur(100px);
+
+    top:-150px;
+
+    left:-100px;
+
+    pointer-events:none;
+
+}
+
+
+/* ==========================================
+   FINAL BODY LIGHTING
+========================================== */
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    pointer-events:none;
+
+    background:
+    radial-gradient(
+        circle at 10% 20%,
+        rgba(46,204,113,.07),
+        transparent 25%
+    ),
+    radial-gradient(
+        circle at 90% 80%,
+        rgba(0,212,255,.05),
+        transparent 25%
+    );
+
+    z-index:-1;
+
+}
+
+
+/* ==========================================
+   MOBILE FINAL FIX
+========================================== */
+
+@media(max-width:768px){
+
+    body{
+
+        padding-bottom:100px;
+
+    }
+
+    .premium-footer{
+
+        padding-bottom:110px;
+
+    }
+
+}
+
+
+/* ==========================================
+   VERY SMALL DEVICE
+========================================== */
+
+@media(max-width:360px){
+
+    .container{
+
+        width:calc(100% - 20px);
+
+    }
+
+    .section-title{
+
+        font-size:26px;
+
+    }
+
+    .hero h1{
+
+        font-size:28px;
+
+    }
+
+}
+
+</style>
+
+
+<!-- ================= FINAL HTML ================= -->
+
+</body>
+
+</html>
