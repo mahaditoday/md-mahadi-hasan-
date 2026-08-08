@@ -3688,210 +3688,161 @@ I'd love to hear from you.
 
 <div class="contact-grid">
 
-<!-- ================= CONTACT CARD ================= -->
-
-<div class="glass contact-card">
-
-<div class="contact-heading">
-
-<span class="small-label">
-CONTACT ME
-</span>
-
-<h2>
-Get In Touch
-</h2>
-
-<p>
-Feel free to contact me anytime.
-I will try my best to respond as soon as possible.
-</p>
-
-</div>
-
-
-<!-- Email -->
-
-<a href="mailto:your@email.com" class="contact-item">
-
-<div class="contact-icon">
-✉️
-</div>
-
-<div>
-
-<span>Email</span>
-
-<strong>
-mahaditoday@email.com
-</strong>
-
-</div>
-
-<div class="contact-arrow">
-→
-</div>
-
-</a>
-
-
-<!-- Phone -->
-
-<a href="tel:+8801000000000" class="contact-item">
-
-<div class="contact-icon">
-📱
-</div>
-
-<div>
-
-<span>Phone</span>
-
-<strong>
-+880 1864330155
-</strong>
-
-</div>
-
-<div class="contact-arrow">
-→
-</div>
-
-</a>
-
-
-<!-- Location -->
-
-<div class="contact-item">
-
-<div class="contact-icon">
-📍
-</div>
-
-<div>
-
-<span>Location</span>
-
-<strong>
-Bangladesh
-</strong>
-
-</div>
-
-</div>
-
-
-<!-- Social -->
-
-<div class="social-row">
-
-<a href="#" aria-label="Facebook">
-f
-</a>
-
-<a href="#" aria-label="Instagram">
-◎
-</a>
-
-<a href="#" aria-label="LinkedIn">
-in
-</a>
-
-<a href="#" aria-label="GitHub">
-◉
-</a>
-
-</div>
-
-</div>
-
-
 <!-- ================= CONTACT FORM ================= -->
 
 <div class="glass contact-form">
 
-<h2>
-Send Me A Message
-</h2>
+    <h2>
+        Send Me A Message
+    </h2>
 
-<p>
-I'll get back to you as soon as possible.
-</p>
+    <p>
+        I'll get back to you as soon as possible.
+    </p>
 
-<form>
 
-<div class="form-row">
+    <form
+        action="https://api.web3forms.com/submit"
+        method="POST"
+    >
 
-<div class="form-group">
+        <!-- WEB3FORMS ACCESS KEY -->
 
-<label>
-Your Name
-</label>
+        <input
+            type="hidden"
+            name="access_key"
+            value="bbefc9e6-badb-467d-8627-49ea696ce289"
+        >
 
-<input
-type="text"
-placeholder="Enter your name"
-required>
+
+        <!-- SUCCESS REDIRECT PAGE -->
+
+        <input
+            type="hidden"
+            name="redirect"
+            value="https://mahaditoday.github.io/md-mahadi-hasan-/submitted.html"
+        >
+
+
+        <!-- EMAIL SUBJECT -->
+
+        <input
+            type="hidden"
+            name="subject"
+            value="New Message From Md Mahadi Hasan Website"
+        >
+
+
+        <!-- FROM NAME -->
+
+        <input
+            type="hidden"
+            name="from_name"
+            value="Md Mahadi Hasan Website"
+        >
+
+
+        <div class="form-row">
+
+
+            <!-- NAME -->
+
+            <div class="form-group">
+
+                <label>
+                    Your Name
+                </label>
+
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="Enter your name"
+                    autocomplete="name"
+                    required
+                >
+
+            </div>
+
+
+            <!-- EMAIL -->
+
+            <div class="form-group">
+
+                <label>
+                    Email Address
+                </label>
+
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    autocomplete="email"
+                    required
+                >
+
+            </div>
+
+
+        </div>
+
+
+        <!-- SUBJECT -->
+
+        <div class="form-group">
+
+            <label>
+                Subject
+            </label>
+
+            <input
+                type="text"
+                name="message_subject"
+                placeholder="What is this about?"
+                required
+            >
+
+        </div>
+
+
+        <!-- MESSAGE -->
+
+        <div class="form-group">
+
+            <label>
+                Message
+            </label>
+
+            <textarea
+                name="message"
+                rows="6"
+                placeholder="Write your message..."
+                required
+            ></textarea>
+
+        </div>
+
+
+        <!-- SEND BUTTON -->
+
+        <button
+            type="submit"
+            class="form-button"
+        >
+
+            Send Message
+
+            <span>
+                →
+            </span>
+
+        </button>
+
+
+    </form>
 
 </div>
 
-
-<div class="form-group">
-
-<label>
-Email Address
-</label>
-
-<input
-type="email"
-placeholder="Enter your email"
-required>
-
 </div>
-
-</div>
-
-
-<div class="form-group">
-
-<label>
-Subject
-</label>
-
-<input
-type="text"
-placeholder="What is this about?"
-required>
-
-</div>
-
-
-<div class="form-group">
-
-<label>
-Message
-</label>
-
-<textarea
-rows="6"
-placeholder="Write your message..."
-required></textarea>
-
-</div>
-
-
-<button type="button" class="form-button" onclick="window.location.href='sendmessage.html'">
-Send Message
-<span>→</span>
-</button>
-   
-</form>
-
-</div>
-
-</div>
-
-
 <!-- ================= GOOGLE MAP ================= -->
 
 <div id="map" class="map-wrapper">
