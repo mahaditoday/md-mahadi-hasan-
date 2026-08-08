@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Traveling | Md Mahadi Hasan</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    min-height:100vh;
+
+    color:#fff;
+
+    background:
+    linear-gradient(
+        180deg,
+        rgba(5,25,20,.52),
+        rgba(4,17,24,.86)
+    ),
+    url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1600");
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+
+    padding-bottom:30px;
+}
+
+/* ================= TOP BAR ================= */
+
+.topbar{
+
+    text-align:center;
+
+    padding:14px 15px;
+
+    font-size:13px;
+
+    letter-spacing:1px;
+
+    background:rgba(255,255,255,.08);
+
+    border-bottom:1px solid rgba(255,255,255,.15);
+
+    backdrop-filter:blur(20px);
+
+    -webkit-backdrop-filter:blur(20px);
+}
+
+/* ================= CONTAINER ================= */
+
+.container{
+
+    width:92%;
+
+    max-width:1100px;
+
+    margin:auto;
+}
+
+/* ================= HEADER ================= */
+
+.header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:25px 0;
+
+    gap:20px;
+}
+
+.logo{
+
+    font-size:25px;
+
+    font-weight:800;
+}
+
+.home-btn{
+
+    color:#fff;
+
+    text-decoration:none;
+
+    padding:11px 20px;
+
+    border-radius:30px;
+
+    background:rgba(255,255,255,.10);
+
+    border:1px solid rgba(255,255,255,.18);
+
+    backdrop-filter:blur(15px);
+
+    transition:.3s;
+}
+
+.home-btn:visited{
+
+    color:#fff;
+}
+
+.home-btn:hover{
+
+    background:#24c982;
+
+    color:#071b14;
+}
+
+/* ================= PAGE TITLE ================= */
+
+.page-title{
+
+    text-align:center;
+
+    margin:20px 0 35px;
+}
+
+.page-title h1{
+
+    font-size:43px;
+
+    font-weight:800;
+
+    margin-bottom:10px;
+}
+
+.page-title p{
+
+    opacity:.82;
+
+    font-size:15px;
+
+    line-height:1.7;
+}
+
+/* ================= FEATURE ================= */
+
+.feature{
+
+    position:relative;
+
+    overflow:hidden;
+
+    min-height:390px;
+
+    border-radius:32px;
+
+    margin-bottom:28px;
+
+    background:
+    rgba(255,255,255,.11);
+
+    border:1px solid rgba(255,255,255,.18);
+
+    backdrop-filter:blur(20px);
+
+    box-shadow:
+    0 25px 55px rgba(0,0,0,.30);
+}
+
+.feature img{
+
+    width:100%;
+
+    height:390px;
+
+    object-fit:cover;
+
+    display:block;
+
+    opacity:.78;
+}
+
+.feature-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    align-items:flex-end;
+
+    padding:35px;
+
+    background:
+    linear-gradient(
+        transparent 25%,
+        rgba(0,0,0,.88)
+    );
+}
+
+.feature-content{
+
+    max-width:650px;
+}
+
+.feature-content h2{
+
+    font-size:32px;
+
+    margin-bottom:10px;
+}
+
+.feature-content p{
+
+    font-size:15px;
+
+    line-height:1.8;
+
+    opacity:.9;
+}
+
+/* ================= TRAVEL GRID ================= */
+
+.travel-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:22px;
+}
+
+/* ================= TRAVEL CARD ================= */
+
+.travel-card{
+
+    overflow:hidden;
+
+    border-radius:26px;
+
+    background:rgba(255,255,255,.11);
+
+    border:1px solid rgba(255,255,255,.17);
+
+    backdrop-filter:blur(22px);
+
+    -webkit-backdrop-filter:blur(22px);
+
+    box-shadow:
+    0 18px 40px rgba(0,0,0,.25);
+
+    transition:.35s;
+}
+
+.travel-card:hover{
+
+    transform:translateY(-7px);
+
+    box-shadow:
+    0 25px 50px rgba(0,0,0,.38);
+}
+
+.travel-card img{
+
+    width:100%;
+
+    height:210px;
+
+    object-fit:cover;
+
+    display:block;
+}
+
+.travel-content{
+
+    padding:22px;
+}
+
+.travel-content h3{
+
+    font-size:20px;
+
+    margin-bottom:9px;
+}
+
+.travel-content p{
+
+    font-size:14px;
+
+    line-height:1.8;
+
+    opacity:.82;
+}
+
+/* ================= TRAVEL TIPS ================= */
+
+.tips{
+
+    margin-top:28px;
+
+    padding:30px;
+
+    border-radius:28px;
+
+    background:rgba(255,255,255,.10);
+
+    border:1px solid rgba(255,255,255,.17);
+
+    backdrop-filter:blur(22px);
+}
+
+.tips h2{
+
+    margin-bottom:20px;
+
+    font-size:25px;
+}
+
+.tip-list{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(2,1fr);
+
+    gap:15px;
+}
+
+.tip{
+
+    padding:17px;
+
+    border-radius:18px;
+
+    background:rgba(255,255,255,.07);
+
+    border:1px solid rgba(255,255,255,.10);
+
+    font-size:14px;
+
+    line-height:1.7;
+}
+
+/* ================= BUTTON ================= */
+
+.btn{
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    padding:12px 22px;
+
+    border-radius:30px;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    background:
+    linear-gradient(
+        135deg,
+        #22c77b,
+        #176b50
+    );
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.btn:visited{
+
+    color:#fff;
+}
+
+.btn:hover{
+
+    transform:translateY(-3px);
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+
+    text-align:center;
+
+    padding:40px 20px 20px;
+
+    margin-top:35px;
+
+    opacity:.85;
+}
+
+footer h2{
+
+    margin-bottom:8px;
+}
+
+footer p{
+
+    font-size:13px;
+
+    opacity:.75;
+}
+
+/* ================= TABLET ================= */
+
+@media(max-width:900px){
+
+    .travel-grid{
+
+        grid-template-columns:
+        repeat(2,1fr);
+    }
+
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:700px){
+
+    body{
+
+        background-attachment:scroll;
+    }
+
+    .container{
+
+        width:92%;
+    }
+
+    .header{
+
+        padding:20px 0;
+    }
+
+    .logo{
+
+        font-size:20px;
+    }
+
+    .home-btn{
+
+        padding:9px 15px;
+
+        font-size:13px;
+    }
+
+    .page-title{
+
+        margin:15px 0 25px;
+    }
+
+    .page-title h1{
+
+        font-size:31px;
+    }
+
+    .page-title p{
+
+        font-size:13px;
+    }
+
+    .feature{
+
+        min-height:330px;
+
+        border-radius:25px;
+    }
+
+    .feature img{
+
+        height:330px;
+    }
+
+    .feature-overlay{
+
+        padding:22px;
+    }
+
+    .feature-content h2{
+
+        font-size:25px;
+    }
+
+    .feature-content p{
+
+        font-size:13px;
+    }
+
+    .travel-grid{
+
+        grid-template-columns:1fr;
+
+        gap:18px;
+    }
+
+    .travel-card img{
+
+        height:210px;
+    }
+
+    .tips{
+
+        padding:22px;
+
+        border-radius:24px;
+    }
+
+    .tip-list{
+
+        grid-template-columns:1fr;
+    }
+
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media(max-width:380px){
+
+    .container{
+
+        width:94%;
+    }
+
+    .page-title h1{
+
+        font-size:28px;
+    }
+
+    .feature{
+
+        min-height:300px;
+    }
+
+    .feature img{
+
+        height:300px;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- ================= TOP BAR ================= -->
+
+<div class="topbar">
+
+🌍 Explore • Travel • Discover
+
+</div>
+
+
+<!-- ================= HEADER ================= -->
+
+<div class="container">
+
+<header class="header">
+
+<div class="logo">
+Md Mahadi Hasan
+</div>
+
+<a href="index.html" class="home-btn">
+🏠 Home
+</a>
+
+</header>
+
+
+<!-- ================= TITLE ================= -->
+
+<div class="page-title">
+
+<h1>🌍 Traveling</h1>
+
+<p>
+Discover places, explore nature and collect unforgettable memories.
+</p>
+
+</div>
+
+
+<!-- ================= FEATURED TRIP ================= -->
+
+<div class="feature">
+
+<img
+src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200"
+alt="Mountain Adventure"
+>
+
+<div class="feature-overlay">
+
+<div class="feature-content">
+
+<h2>
+🏔 Adventure Begins Here
+</h2>
+
+<p>
+Travel is more than visiting a new place. It is about experiencing different environments, discovering beautiful landscapes and creating memories that last forever.
+</p>
+
+<a href="travelblog.html" class="btn">
+📝 Read Travel Stories →
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- ================= DESTINATIONS ================= -->
+
+<div class="travel-grid">
+
+
+<!-- CARD 1 -->
+
+<div class="travel-card">
+
+<img
+src="https://images.unsplash.com/photo-1500534623283-312aade485b7?w=900"
+alt="Nature"
+>
+
+<div class="travel-content">
+
+<h3>
+🌿 Nature Escapes
+</h3>
+
+<p>
+Peaceful landscapes, green forests and beautiful natural destinations.
+</p>
+
+</div>
+
+</div>
+
+
+<!-- CARD 2 -->
+
+<div class="travel-card">
+
+<img
+src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=900"
+alt="Mountain"
+>
+
+<div class="travel-content">
+
+<h3>
+🏔 Mountain Adventures
+</h3>
+
+<p>
+Explore breathtaking mountains and experience the beauty of highland destinations.
+</p>
+
+</div>
+
+</div>
+
+
+<!-- CARD 3 -->
+
+<div class="travel-card">
+
+<img
+src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=900"
+alt="Beach"
+>
+
+<div class="travel-content">
+
+<h3>
+🌊 Coastal Journeys
+</h3>
+
+<p>
+Relax beside the sea and discover beautiful coastal locations and peaceful beaches.
+</p>
+
+</div>
+
+</div>
+
+
+<!-- CARD 4 -->
+
+<div class="travel-card">
+
+<img
+src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=900"
+alt="Lake"
+>
+
+<div class="travel-content">
+
+<h3>
+🏞 Scenic Places
+</h3>
+
+<p>
+Beautiful lakes, valleys and landscapes that are perfect for exploration.
+</p>
+
+</div>
+
+</div>
+
+
+<!-- CARD 5 -->
+
+<div class="travel-card">
+
+<img
+src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?w=900"
+alt="Travel"
+>
+
+<div class="travel-content">
+
+<h3>
+🎒 Travel Experiences
+</h3>
+
+<p>
+Every journey brings a new experience, a new story and a new memory.
+</p>
+
+</div>
+
+</div>
+
+
+<!-- CARD 6 -->
+
+<div class="travel-card">
+
+<img
+src="https://images.unsplash.com/photo-1488085061387-422e29b40080?w=900"
+alt="World Travel"
+>
+
+<div class="travel-content">
+
+<h3>
+✈️ Exploring The World
+</h3>
+
+<p>
+Discover new destinations and enjoy the adventure of exploring the world.
+</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+<!-- ================= TRAVEL TIPS ================= -->
+
+<div class="tips">
+
+<h2>
+💡 My Travel Thoughts
+</h2>
+
+<div class="tip-list">
+
+<div class="tip">
+🧭 Plan your destination before starting your journey.
+</div>
+
+<div class="tip">
+📷 Capture meaningful moments and memories.
+</div>
+
+<div class="tip">
+🌿 Respect nature and keep beautiful places clean.
+</div>
+
+<div class="tip">
+❤️ Enjoy the journey instead of only focusing on the destination.
+</div>
+
+</div>
+
+<a href="travelblog.html" class="btn">
+📝 Explore Travel Blog →
+</a>
+
+</div>
+
+
+</div>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<h2>
+Md Mahadi Hasan
+</h2>
+
+<p>
+Traveler • Blogger • Explorer
+</p>
+
+<p style="margin-top:8px;">
+© 2026 All Rights Reserved
+</p>
+
+</footer>
+
+
+</body>
+
+</html>
