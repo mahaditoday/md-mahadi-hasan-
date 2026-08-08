@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About | Md Mahadi Hasan</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    min-height:100vh;
+
+    color:#fff;
+
+    background:
+    linear-gradient(
+        180deg,
+        rgba(8,25,22,.55),
+        rgba(5,18,25,.82)
+    ),
+    url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1600");
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+
+    padding-bottom:30px;
+}
+
+/* ================= TOP BAR ================= */
+
+.topbar{
+
+    text-align:center;
+
+    padding:14px 15px;
+
+    font-size:13px;
+
+    letter-spacing:1px;
+
+    background:rgba(255,255,255,.08);
+
+    border-bottom:1px solid rgba(255,255,255,.15);
+
+    backdrop-filter:blur(20px);
+
+    -webkit-backdrop-filter:blur(20px);
+}
+
+/* ================= CONTAINER ================= */
+
+.container{
+
+    width:92%;
+
+    max-width:1100px;
+
+    margin:auto;
+}
+
+/* ================= HEADER ================= */
+
+.header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:25px 0;
+
+    gap:20px;
+}
+
+.logo{
+
+    font-size:25px;
+
+    font-weight:800;
+
+    white-space:nowrap;
+}
+
+.home-btn{
+
+    text-decoration:none;
+
+    color:white;
+
+    padding:11px 20px;
+
+    border-radius:30px;
+
+    background:rgba(255,255,255,.10);
+
+    border:1px solid rgba(255,255,255,.18);
+
+    backdrop-filter:blur(15px);
+
+    -webkit-backdrop-filter:blur(15px);
+
+    transition:.3s;
+}
+
+.home-btn:hover{
+
+    background:#24c982;
+
+    color:#081c15;
+
+    transform:translateY(-2px);
+}
+
+/* ================= MAIN CARD ================= */
+
+.about-card{
+
+    padding:45px;
+
+    border-radius:35px;
+
+    background:rgba(255,255,255,.11);
+
+    border:1px solid rgba(255,255,255,.18);
+
+    backdrop-filter:blur(25px);
+
+    -webkit-backdrop-filter:blur(25px);
+
+    box-shadow:
+    0 25px 60px rgba(0,0,0,.35);
+}
+
+/* ================= PROFILE ================= */
+
+.profile-area{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:35px;
+
+    margin-bottom:35px;
+}
+
+.profile{
+
+    width:180px;
+
+    height:180px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:5px solid rgba(255,255,255,.95);
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,.35);
+}
+
+.profile-text h1{
+
+    font-size:40px;
+
+    font-weight:800;
+
+    margin-bottom:8px;
+}
+
+.profile-text .role{
+
+    color:#62e89a;
+
+    font-size:17px;
+
+    font-weight:600;
+}
+
+/* ================= TEXT ================= */
+
+.description{
+
+    font-size:16px;
+
+    line-height:1.9;
+
+    opacity:.93;
+
+    margin-bottom:32px;
+}
+
+.section-title{
+
+    font-size:25px;
+
+    margin-bottom:18px;
+}
+
+/* ================= INFO GRID ================= */
+
+.info-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(2,1fr);
+
+    gap:16px;
+
+    margin-top:20px;
+}
+
+.info-box{
+
+    padding:20px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,.08);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    transition:.3s;
+}
+
+.info-box:hover{
+
+    transform:translateY(-4px);
+
+    background:rgba(255,255,255,.13);
+}
+
+.info-box h3{
+
+    font-size:16px;
+
+    margin-bottom:7px;
+
+    color:#69df9a;
+}
+
+.info-box p{
+
+    font-size:14px;
+
+    opacity:.9;
+}
+
+/* ================= BUTTONS ================= */
+
+.buttons{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(2,1fr);
+
+    gap:15px;
+
+    margin-top:30px;
+}
+
+.btn{
+
+    display:block;
+
+    text-align:center;
+
+    text-decoration:none;
+
+    color:#fff;
+
+    padding:15px;
+
+    border-radius:16px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #22c77b,
+        #176b50
+    );
+
+    font-weight:700;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.22);
+
+    transition:.3s;
+}
+
+.btn:visited{
+
+    color:#fff;
+}
+
+.btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 15px 30px rgba(0,0,0,.35);
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+
+    text-align:center;
+
+    padding:35px 20px 20px;
+
+    margin-top:30px;
+
+    opacity:.85;
+}
+
+footer h2{
+
+    margin-bottom:8px;
+}
+
+footer p{
+
+    font-size:13px;
+
+    opacity:.75;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:700px){
+
+    body{
+
+        background-attachment:scroll;
+    }
+
+    .container{
+
+        width:92%;
+    }
+
+    .header{
+
+        padding:20px 0;
+    }
+
+    .logo{
+
+        font-size:20px;
+    }
+
+    .home-btn{
+
+        padding:9px 15px;
+
+        font-size:13px;
+    }
+
+    .about-card{
+
+        padding:25px 20px;
+
+        border-radius:27px;
+    }
+
+    .profile-area{
+
+        flex-direction:column;
+
+        text-align:center;
+
+        gap:18px;
+    }
+
+    .profile{
+
+        width:145px;
+
+        height:145px;
+    }
+
+    .profile-text h1{
+
+        font-size:30px;
+    }
+
+    .profile-text .role{
+
+        font-size:15px;
+    }
+
+    .description{
+
+        font-size:14px;
+
+        line-height:1.8;
+    }
+
+    .section-title{
+
+        font-size:22px;
+    }
+
+    .info-grid{
+
+        grid-template-columns:1fr;
+    }
+
+    .buttons{
+
+        grid-template-columns:1fr;
+    }
+
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media(max-width:380px){
+
+    .container{
+
+        width:94%;
+    }
+
+    .logo{
+
+        font-size:18px;
+    }
+
+    .profile-text h1{
+
+        font-size:27px;
+    }
+
+    .about-card{
+
+        padding:22px 17px;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- ================= TOP BAR ================= -->
+
+<div class="topbar">
+
+🌿 Welcome to the Official Website of Md Mahadi Hasan
+
+</div>
+
+
+<!-- ================= HEADER ================= -->
+
+<div class="container">
+
+<header class="header">
+
+<div class="logo">
+Md Mahadi Hasan
+</div>
+
+<a href="index.html" class="home-btn">
+🏠 Home
+</a>
+
+</header>
+
+
+<!-- ================= ABOUT CARD ================= -->
+
+<div class="about-card">
+
+
+<!-- PROFILE -->
+
+<div class="profile-area">
+
+<img
+src="Mahadi-B.jpg"
+alt="Md Mahadi Hasan"
+class="profile"
+>
+
+<div class="profile-text">
+
+<h1>
+Md Mahadi Hasan
+</h1>
+
+<div class="role">
+Traveler • Blogger • Explorer
+</div>
+
+</div>
+
+</div>
+
+
+<!-- ================= ABOUT ME ================= -->
+
+<h2 class="section-title">
+✨ About Me
+</h2>
+
+<p class="description">
+
+Welcome to my official website.
+
+I am Md Mahadi Hasan, and this website is my personal space where I share my journey, interests, experiences, travel memories, photography, achievements and creative work.
+
+Through this platform, I want to keep my favorite moments, stories and activities organized in one place and share them with visitors from around the world.
+
+</p>
+
+
+<!-- ================= PERSONAL INFORMATION ================= -->
+
+<h2 class="section-title">
+📌 Personal Information
+</h2>
+
+<div class="info-grid">
+
+
+<div class="info-box">
+
+<h3>
+👤 Name
+</h3>
+
+<p>
+Md Mahadi Hasan
+</p>
+
+</div>
+
+
+<div class="info-box">
+
+<h3>
+🌍 Interests
+</h3>
+
+<p>
+Traveling • Photography • Exploration
+</p>
+
+</div>
+
+
+<div class="info-box">
+
+<h3>
+📝 Website
+</h3>
+
+<p>
+Personal Portfolio & Blog
+</p>
+
+</div>
+
+
+<div class="info-box">
+
+<h3>
+📍 Location
+</h3>
+
+<p>
+Bangladesh
+</p>
+
+</div>
+
+
+</div>
+
+
+<!-- ================= EXPLORE ================= -->
+
+<h2
+class="section-title"
+style="margin-top:35px;"
+>
+
+🚀 Explore My Website
+
+</h2>
+
+
+<div class="buttons">
+
+
+<a href="traveling.html" class="btn">
+
+🌍 Traveling
+
+</a>
+
+
+<a href="gallery.html" class="btn">
+
+🖼 Gallery
+
+</a>
+
+
+<a href="travelblog.html" class="btn">
+
+📝 Travel Blog
+
+</a>
+
+
+<a href="achievements.html" class="btn">
+
+🏆 Achievements
+
+</a>
+
+
+<a href="photography.html" class="btn">
+
+📷 Photography
+
+</a>
+
+
+<a href="contact.html" class="btn">
+
+📞 Contact Me
+
+</a>
+
+
+</div>
+
+
+</div>
+
+</div>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<h2>
+Md Mahadi Hasan
+</h2>
+
+<p>
+Traveler • Blogger • Explorer
+</p>
+
+<p style="margin-top:8px;">
+© 2026 All Rights Reserved
+</p>
+
+</footer>
+
+
+</body>
+
+</html>
