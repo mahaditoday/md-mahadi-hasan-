@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Services | Md Mahadi Hasan</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    min-height:100vh;
+
+    color:#fff;
+
+    background:
+    linear-gradient(
+        180deg,
+        rgba(7,25,21,.58),
+        rgba(5,17,24,.90)
+    ),
+    url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1600");
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+
+    padding-bottom:40px;
+}
+
+/* TOP BAR */
+
+.topbar{
+
+    text-align:center;
+
+    padding:14px 15px;
+
+    font-size:13px;
+
+    letter-spacing:1px;
+
+    background:rgba(255,255,255,.08);
+
+    border-bottom:1px solid rgba(255,255,255,.15);
+
+    backdrop-filter:blur(20px);
+
+    -webkit-backdrop-filter:blur(20px);
+}
+
+/* CONTAINER */
+
+.container{
+
+    width:92%;
+
+    max-width:1100px;
+
+    margin:auto;
+}
+
+/* HEADER */
+
+.header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:25px 0;
+
+    gap:20px;
+}
+
+.logo{
+
+    font-size:25px;
+
+    font-weight:800;
+}
+
+.home-btn{
+
+    color:#fff;
+
+    text-decoration:none;
+
+    padding:11px 20px;
+
+    border-radius:30px;
+
+    background:rgba(255,255,255,.10);
+
+    border:1px solid rgba(255,255,255,.18);
+
+    backdrop-filter:blur(15px);
+
+    transition:.3s;
+}
+
+.home-btn:visited{
+
+    color:#fff;
+}
+
+.home-btn:hover{
+
+    background:#24c982;
+
+    color:#071b14;
+}
+
+/* TITLE */
+
+.page-title{
+
+    text-align:center;
+
+    margin:20px 0 35px;
+}
+
+.page-title h1{
+
+    font-size:43px;
+
+    font-weight:800;
+
+    margin-bottom:10px;
+}
+
+.page-title p{
+
+    font-size:15px;
+
+    opacity:.82;
+
+    line-height:1.7;
+}
+
+/* SERVICE GRID */
+
+.service-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:20px;
+}
+
+/* SERVICE CARD */
+
+.service-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:30px 24px;
+
+    border-radius:28px;
+
+    background:rgba(255,255,255,.11);
+
+    border:1px solid rgba(255,255,255,.18);
+
+    backdrop-filter:blur(25px);
+
+    -webkit-backdrop-filter:blur(25px);
+
+    box-shadow:
+    0 20px 45px rgba(0,0,0,.27);
+
+    transition:.35s;
+}
+
+.service-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:
+    0 28px 55px rgba(0,0,0,.40);
+}
+
+/* ICON */
+
+.service-icon{
+
+    width:70px;
+
+    height:70px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-bottom:20px;
+
+    border-radius:22px;
+
+    font-size:31px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #22c77b,
+        #176b50
+    );
+
+    box-shadow:
+    0 12px 25px rgba(0,0,0,.25);
+}
+
+.service-card h2{
+
+    font-size:21px;
+
+    margin-bottom:10px;
+}
+
+.service-card p{
+
+    font-size:13px;
+
+    line-height:1.8;
+
+    opacity:.82;
+}
+
+/* FEATURE SERVICE */
+
+.feature-service{
+
+    grid-column:span 2;
+
+    padding:32px;
+
+}
+
+.feature-service h2{
+
+    font-size:27px;
+}
+
+/* SERVICE LIST */
+
+.service-list{
+
+    list-style:none;
+
+    margin-top:20px;
+}
+
+.service-list li{
+
+    padding:9px 0;
+
+    font-size:13px;
+
+    opacity:.85;
+}
+
+.service-list li::before{
+
+    content:"✓";
+
+    color:#69df9a;
+
+    font-weight:700;
+
+    margin-right:9px;
+}
+
+/* CTA */
+
+.cta{
+
+    margin-top:28px;
+
+    padding:32px;
+
+    text-align:center;
+
+    border-radius:30px;
+
+    background:rgba(255,255,255,.10);
+
+    border:1px solid rgba(255,255,255,.17);
+
+    backdrop-filter:blur(22px);
+
+    -webkit-backdrop-filter:blur(22px);
+}
+
+.cta h2{
+
+    font-size:27px;
+
+    margin-bottom:10px;
+}
+
+.cta p{
+
+    font-size:14px;
+
+    opacity:.82;
+
+    line-height:1.8;
+}
+
+/* BUTTON */
+
+.btn{
+
+    display:inline-block;
+
+    margin-top:22px;
+
+    padding:13px 25px;
+
+    border-radius:30px;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    background:
+    linear-gradient(
+        135deg,
+        #22c77b,
+        #176b50
+    );
+
+    box-shadow:
+    0 12px 28px rgba(0,0,0,.25);
+
+    transition:.3s;
+}
+
+.btn:visited{
+
+    color:#fff;
+}
+
+.btn:hover{
+
+    transform:translateY(-3px);
+}
+
+/* FOOTER */
+
+footer{
+
+    text-align:center;
+
+    padding:40px 20px 10px;
+
+    margin-top:35px;
+
+    opacity:.8;
+}
+
+footer h2{
+
+    margin-bottom:7px;
+}
+
+footer p{
+
+    font-size:13px;
+}
+
+/* TABLET */
+
+@media(max-width:900px){
+
+    .service-grid{
+
+        grid-template-columns:
+        repeat(2,1fr);
+    }
+
+}
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+    body{
+
+        background-attachment:scroll;
+    }
+
+    .container{
+
+        width:92%;
+    }
+
+    .header{
+
+        padding:20px 0;
+    }
+
+    .logo{
+
+        font-size:20px;
+    }
+
+    .home-btn{
+
+        padding:9px 15px;
+
+        font-size:13px;
+    }
+
+    .page-title{
+
+        margin:15px 0 25px;
+    }
+
+    .page-title h1{
+
+        font-size:31px;
+    }
+
+    .page-title p{
+
+        font-size:13px;
+    }
+
+    .service-grid{
+
+        grid-template-columns:1fr;
+
+        gap:16px;
+    }
+
+    .feature-service{
+
+        grid-column:span 1;
+
+        padding:25px 20px;
+    }
+
+    .service-card{
+
+        padding:25px 20px;
+
+        border-radius:24px;
+    }
+
+    .cta{
+
+        padding:25px 20px;
+
+        border-radius:25px;
+    }
+
+    .cta h2{
+
+        font-size:23px;
+    }
+
+}
+
+/* SMALL MOBILE */
+
+@media(max-width:380px){
+
+    .container{
+
+        width:94%;
+    }
+
+    .page-title h1{
+
+        font-size:28px;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<!-- TOP BAR -->
+
+<div class="topbar">
+
+🛠️ Creative Services • Md Mahadi Hasan
+
+</div>
+
+
+<!-- HEADER -->
+
+<div class="container">
+
+<header class="header">
+
+<div class="logo">
+Md Mahadi Hasan
+</div>
+
+<a href="index.html" class="home-btn">
+🏠 Home
+</a>
+
+</header>
+
+
+<!-- TITLE -->
+
+<div class="page-title">
+
+<h1>
+🛠 My Services
+</h1>
+
+<p>
+Creative digital services, photography and web experiences.
+</p>
+
+</div>
+
+
+<!-- SERVICES -->
+
+<div class="service-grid">
+
+
+<!-- FEATURE -->
+
+<div class="service-card feature-service">
+
+<div class="service-icon">
+💻
+</div>
+
+<h2>
+Web Design & Development
+</h2>
+
+<p>
+
+Modern, responsive and visually engaging websites designed for desktop, tablet and mobile devices.
+
+</p>
+
+<ul class="service-list">
+
+<li>
+Responsive website design
+</li>
+
+<li>
+Modern user interface design
+</li>
+
+<li>
+Personal & portfolio websites
+</li>
+
+<li>
+Landing page development
+</li>
+
+</ul>
+
+</div>
+
+
+<!-- PHOTOGRAPHY -->
+
+<div class="service-card">
+
+<div class="service-icon">
+📷
+</div>
+
+<h2>
+Photography
+</h2>
+
+<p>
+
+Creative photography focused on memorable moments, travel, nature and personal projects.
+
+</p>
+
+<a href="photography.html" class="btn">
+View Photography →
+</a>
+
+</div>
+
+
+<!-- TRAVEL BLOG -->
+
+<div class="service-card">
+
+<div class="service-icon">
+🌍
+</div>
+
+<h2>
+Travel Blog
+</h2>
+
+<p>
+
+Travel stories, destination experiences and visually engaging travel content.
+
+</p>
+
+<a href="travelblog.html" class="btn">
+Explore Blog →
+</a>
+
+</div>
+
+
+<!-- CREATIVE DESIGN -->
+
+<div class="service-card">
+
+<div class="service-icon">
+🎨
+</div>
+
+<h2>
+Creative Design
+</h2>
+
+<p>
+
+Modern visual concepts and creative digital designs for personal projects and online presence.
+
+</p>
+
+</div>
+
+
+<!-- PERSONAL WEBSITE -->
+
+<div class="service-card">
+
+<div class="service-icon">
+👤
+</div>
+
+<h2>
+Personal Website
+</h2>
+
+<p>
+
+Professional personal websites that showcase your profile, achievements, gallery and projects.
+
+</p>
+
+</div>
+
+
+<!-- DIGITAL PROJECTS -->
+
+<div class="service-card">
+
+<div class="service-icon">
+🚀
+</div>
+
+<h2>
+Digital Projects
+</h2>
+
+<p>
+
+Creative digital projects combining design, technology and a modern user experience.
+
+</p>
+
+</div>
+
+
+</div>
+
+
+<!-- CTA -->
+
+<div class="cta">
+
+<h2>
+✨ Have a Project in Mind?
+</h2>
+
+<p>
+
+Let's discuss your idea and create something modern, useful and visually impressive.
+
+</p>
+
+<a href="sendmessage.html" class="btn">
+✉️ Send Me a Message →
+</a>
+
+</div>
+
+
+</div>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<h2>
+Md Mahadi Hasan
+</h2>
+
+<p>
+Traveler • Blogger • Explorer
+</p>
+
+<p style="margin-top:8px;">
+© 2026 All Rights Reserved
+</p>
+
+</footer>
+
+
+</body>
+
+</html>
